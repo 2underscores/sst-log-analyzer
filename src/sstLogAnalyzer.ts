@@ -15,7 +15,7 @@ interface FunctionBuild {
     };
 }
 
-interface SynthBlock {
+export interface SynthBlock {
     startTime: Date;
     endTime: Date;
     duration: number;
@@ -32,7 +32,7 @@ interface BuildEvent {
     sourceID: string;
 }
 
-interface PublishBlock {
+export interface PublishBlock {
     startTime: Date;
     endTime: Date;
     duration: number;
@@ -51,7 +51,7 @@ interface StackDeploys {
     }>;
 }
 
-export default class SSTLogAnalyzer {
+export class SSTLogAnalyzer {
     private static readonly SYNTH_START_PATTERN = /Synthesizing stacks\.\.\./;
     private static readonly SYNTH_END_PATTERN = /Finished synthesizing/;
     private static readonly TIMESTAMP_PATTERN = /^(?<timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z)/;
@@ -210,6 +210,8 @@ export default class SSTLogAnalyzer {
                                 currentPublish = null;
                                 inProgressStacks.clear();
                             }
+                        } else {
+                            console.log('Unhandled stack status:', status);
                         }
                     }
                 }
