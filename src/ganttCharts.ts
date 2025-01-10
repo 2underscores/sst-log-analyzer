@@ -1,10 +1,11 @@
-interface objectType {
+interface ObjectType {
     name: string;
     startTime: Date;
     endTime: Date;
 }
 
-export function generateGanttChartTextBased(tasks: objectType[]): string {
+export function generateGanttChartTextBased(tasks: ObjectType[]): string {
+    tasks.sort((a, b) => a.startTime.getTime() - b.startTime.getTime());
     const taskNameWidth = Math.max(...tasks.map(task => task.name.length));
     const timeTickWidth = 10; // HH:mm:ss format
     const timeTickCount = 15; // 15 time stamps on x axis
