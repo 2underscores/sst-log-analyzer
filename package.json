@@ -23,9 +23,5 @@
     "@types/node": "^22.10.5",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
-  },
-  "dependencies": {
-    "@mermaid-js/mermaid-cli": "^11.4.2",
-    "date-fns": "^4.1.0"
   }
 }

@@ -4,8 +4,6 @@ interface objectType {
     endTime: Date;
 }
 
-// Alternatives - Excel, Mermaid diagram, PDF
-
 export function generateGanttChartTextBased(tasks: objectType[]): string {
     const taskNameWidth = Math.max(...tasks.map(task => task.name.length));
     const timeTickWidth = 10; // HH:mm:ss format
@@ -44,10 +42,10 @@ export function generateGanttChartTextBased(tasks: objectType[]): string {
 // Test functionality
 if (new URL(import.meta.url).pathname === process.argv[1]) {
     const tasks = [
-        { name: "Task A", startTime: new Date("2025-01-01T09:00:00"), endTime: new Date("2025-01-01T09:15:00") },
-        { name: "Task B", startTime: new Date("2025-01-01T09:10:00"), endTime: new Date("2025-01-01T09:30:00") },
-        { name: "Task D", startTime: new Date("2025-01-01T09:00:00"), endTime: new Date("2025-01-01T09:45:00") },
-        { name: "Task C", startTime: new Date("2025-01-01T09:20:00"), endTime: new Date("2025-01-01T09:45:00") }
+        { name: "Task A", startTime: new Date("2025-01-01T09:00:00"), endTime: new Date("2025-01-01T09:45:00") },
+        { name: "Task B", startTime: new Date("2025-01-01T09:00:00"), endTime: new Date("2025-01-01T09:15:00") },
+        { name: "Task C", startTime: new Date("2025-01-01T09:10:00"), endTime: new Date("2025-01-01T09:30:00") },
+        { name: "Task D", startTime: new Date("2025-01-01T09:20:00"), endTime: new Date("2025-01-01T09:45:00") }
     ];
     console.log(generateGanttChartTextBased(tasks));
 }
