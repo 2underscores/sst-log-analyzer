@@ -1,0 +1,1048 @@
+{
+  "synthBlocks": [
+    {
+      "startTime": "2025-01-08T03:02:00.522Z",
+      "endTime": "2025-01-08T03:02:24.054Z",
+      "duration": 23532,
+      "buildConcurrency": 9,
+      "deferredTasks": 115,
+      "functionBuilds": [
+        {
+          "functionId": "c8010155907e306341b13ef41ac7df0d4d16f2816c",
+          "name": "services/core/listeners/publishDDBStream.lambdaHandlerDdbStream",
+          "startTime": "2025-01-08T03:02:08.171Z",
+          "endTime": "2025-01-08T03:02:18.366Z",
+          "duration": 10195,
+          "buildDetails": {
+            "functionID": "c8010155907e306341b13ef41ac7df0d4d16f2816c",
+            "handler": "services/core/listeners/publishDDBStream.lambdaHandlerDdbStream",
+            "freeMemory": "164 MB",
+            "totalMemory": "32768 MB",
+            "rss": "402 MB",
+            "heapTotal": "310 MB",
+            "heapUsed": "287 MB",
+            "external": "28 MB",
+            "arrayBuffers": "9 MB"
+          }
+        },
+        {
+          "functionId": "c8fec1519bc83d31cbb016be146673a6d8d393fbd7",
+          "name": "stacks/customResource/duplicateCerts/lambda.crossRegionCopyCerts",
+          "startTime": "2025-01-08T03:02:08.170Z",
+          "endTime": "2025-01-08T03:02:18.376Z",
+          "duration": 10206,
+          "buildDetails": {
+            "functionID": "c8fec1519bc83d31cbb016be146673a6d8d393fbd7",
+            "handler": "stacks/customResource/duplicateCerts/lambda.crossRegionCopyCerts",
+            "freeMemory": "285 MB",
+            "totalMemory": "32768 MB",
+            "rss": "402 MB",
+            "heapTotal": "310 MB",
+            "heapUsed": "287 MB",
+            "external": "28 MB",
+            "arrayBuffers": "9 MB"
+          }
+        },
+        {
+          "functionId": "c89af5d4758a7b90951fed528af785f2104c84fd1d",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populatePurposeOfAccounts/lambda.handler",
+          "startTime": "2025-01-08T03:02:08.173Z",
+          "endTime": "2025-01-08T03:02:18.377Z",
+          "duration": 10204,
+          "buildDetails": {
+            "functionID": "c89af5d4758a7b90951fed528af785f2104c84fd1d",
+            "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populatePurposeOfAccounts/lambda.handler",
+            "freeMemory": "283 MB",
+            "totalMemory": "32768 MB",
+            "rss": "402 MB",
+            "heapTotal": "310 MB",
+            "heapUsed": "287 MB",
+            "external": "28 MB",
+            "arrayBuffers": "9 MB"
+          }
+        },
+        {
+          "functionId": "c8c91a1094126f78d0a0701c35d357fec3166eeb1e",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populateOccupations/lambda.handler",
+          "startTime": "2025-01-08T03:02:08.173Z",
+          "endTime": "2025-01-08T03:02:18.377Z",
+          "duration": 10204,
+          "buildDetails": {
+            "functionID": "c8c91a1094126f78d0a0701c35d357fec3166eeb1e",
+            "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populateOccupations/lambda.handler",
+            "freeMemory": "283 MB",
+            "totalMemory": "32768 MB",
+            "rss": "402 MB",
+            "heapTotal": "310 MB",
+            "heapUsed": "287 MB",
+            "external": "28 MB",
+            "arrayBuffers": "9 MB"
+          }
+        },
+        {
+          "functionId": "c8a21fce99973d1fd0da78f29b946c80b1f271cbc3",
+          "name": "stacks/customResource/snsProvision/lambda.handler",
+          "startTime": "2025-01-08T03:02:08.172Z",
+          "endTime": "2025-01-08T03:02:18.404Z",
+          "duration": 10232,
+          "buildDetails": {
+            "functionID": "c8a21fce99973d1fd0da78f29b946c80b1f271cbc3",
+            "handler": "stacks/customResource/snsProvision/lambda.handler",
+            "freeMemory": "283 MB",
+            "totalMemory": "32768 MB",
+            "rss": "402 MB",
+            "heapTotal": "310 MB",
+            "heapUsed": "288 MB",
+            "external": "28 MB",
+            "arrayBuffers": "9 MB"
+          }
+        },
+        {
+          "functionId": "c8c7a30fa2eaf65b97c3cae357c7620148cfcebd6d",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populateIndustries/lambda.handler",
+          "startTime": "2025-01-08T03:02:08.172Z",
+          "endTime": "2025-01-08T03:02:18.635Z",
+          "duration": 10463,
+          "buildDetails": {
+            "functionID": "c8c7a30fa2eaf65b97c3cae357c7620148cfcebd6d",
+            "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populateIndustries/lambda.handler",
+            "freeMemory": "283 MB",
+            "totalMemory": "32768 MB",
+            "rss": "402 MB",
+            "heapTotal": "310 MB",
+            "heapUsed": "288 MB",
+            "external": "28 MB",
+            "arrayBuffers": "9 MB"
+          }
+        },
+        {
+          "functionId": "c8b49e21c894c631830968dcff89854dde20ec8b31",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populateSourceOfFunds/lambda.handler",
+          "startTime": "2025-01-08T03:02:08.173Z",
+          "endTime": "2025-01-08T03:02:18.677Z",
+          "duration": 10504,
+          "buildDetails": {
+            "functionID": "c8b49e21c894c631830968dcff89854dde20ec8b31",
+            "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populateSourceOfFunds/lambda.handler",
+            "freeMemory": "283 MB",
+            "totalMemory": "32768 MB",
+            "rss": "404 MB",
+            "heapTotal": "310 MB",
+            "heapUsed": "288 MB",
+            "external": "30 MB",
+            "arrayBuffers": "11 MB"
+          }
+        },
+        {
+          "functionId": "c8a23c445b25d1d87089fb8cd73fc6aaa770d8ef5d",
+          "name": "stacks/customResource/auth0/appLevel.handler",
+          "startTime": "2025-01-08T03:02:08.172Z",
+          "endTime": "2025-01-08T03:02:18.813Z",
+          "duration": 10641,
+          "buildDetails": {
+            "functionID": "c8a23c445b25d1d87089fb8cd73fc6aaa770d8ef5d",
+            "handler": "stacks/customResource/auth0/appLevel.handler",
+            "freeMemory": "283 MB",
+            "totalMemory": "32768 MB",
+            "rss": "402 MB",
+            "heapTotal": "310 MB",
+            "heapUsed": "288 MB",
+            "external": "28 MB",
+            "arrayBuffers": "9 MB"
+          }
+        },
+        {
+          "functionId": "c88b0db6b382b2ab00b670b8692fd3c63ece0ca0c7",
+          "name": "stacks/base/PlatformConfig/customResources/configInjection.handler",
+          "startTime": "2025-01-08T03:02:08.172Z",
+          "endTime": "2025-01-08T03:02:18.914Z",
+          "duration": 10742,
+          "buildDetails": {
+            "functionID": "c88b0db6b382b2ab00b670b8692fd3c63ece0ca0c7",
+            "handler": "stacks/base/PlatformConfig/customResources/configInjection.handler",
+            "freeMemory": "283 MB",
+            "totalMemory": "32768 MB",
+            "rss": "415 MB",
+            "heapTotal": "310 MB",
+            "heapUsed": "292 MB",
+            "external": "42 MB",
+            "arrayBuffers": "22 MB"
+          }
+        },
+        {
+          "functionId": "c8071a7c8f02cc43f2846a11311751420ec9b5b913",
+          "name": "services/opsConsole/stack/customResources/populateCounters/lambda.handler",
+          "startTime": "2025-01-08T03:02:18.496Z",
+          "endTime": "2025-01-08T03:02:22.561Z",
+          "duration": 4065,
+          "buildDetails": {
+            "functionID": "c8071a7c8f02cc43f2846a11311751420ec9b5b913",
+            "handler": "services/opsConsole/stack/customResources/populateCounters/lambda.handler",
+            "freeMemory": "138 MB",
+            "totalMemory": "32768 MB",
+            "rss": "450 MB",
+            "heapTotal": "313 MB",
+            "heapUsed": "296 MB",
+            "external": "66 MB",
+            "arrayBuffers": "47 MB"
+          }
+        }
+      ]
+    },
+    {
+      "startTime": "2025-01-08T03:14:42.474Z",
+      "endTime": "2025-01-08T03:14:56.919Z",
+      "duration": 14445,
+      "buildConcurrency": 9,
+      "deferredTasks": 115,
+      "functionBuilds": [
+        {
+          "functionId": "c8fec1519bc83d31cbb016be146673a6d8d393fbd7",
+          "name": "stacks/customResource/duplicateCerts/lambda.crossRegionCopyCerts",
+          "startTime": "2025-01-08T03:14:47.236Z",
+          "endTime": "2025-01-08T03:14:51.154Z",
+          "duration": 3918,
+          "buildDetails": {
+            "functionID": "c8fec1519bc83d31cbb016be146673a6d8d393fbd7",
+            "handler": "stacks/customResource/duplicateCerts/lambda.crossRegionCopyCerts",
+            "freeMemory": "178 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1328 MB",
+            "heapTotal": "641 MB",
+            "heapUsed": "440 MB",
+            "external": "28 MB",
+            "arrayBuffers": "9 MB"
+          }
+        },
+        {
+          "functionId": "c8a21fce99973d1fd0da78f29b946c80b1f271cbc3",
+          "name": "stacks/customResource/snsProvision/lambda.handler",
+          "startTime": "2025-01-08T03:14:47.236Z",
+          "endTime": "2025-01-08T03:14:51.154Z",
+          "duration": 3918,
+          "buildDetails": {
+            "functionID": "c8a21fce99973d1fd0da78f29b946c80b1f271cbc3",
+            "handler": "stacks/customResource/snsProvision/lambda.handler",
+            "freeMemory": "152 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1328 MB",
+            "heapTotal": "641 MB",
+            "heapUsed": "440 MB",
+            "external": "28 MB",
+            "arrayBuffers": "9 MB"
+          }
+        },
+        {
+          "functionId": "c8010155907e306341b13ef41ac7df0d4d16f2816c",
+          "name": "services/core/listeners/publishDDBStream.lambdaHandlerDdbStream",
+          "startTime": "2025-01-08T03:14:47.236Z",
+          "endTime": "2025-01-08T03:14:52.570Z",
+          "duration": 5334,
+          "buildDetails": {
+            "functionID": "c8010155907e306341b13ef41ac7df0d4d16f2816c",
+            "handler": "services/core/listeners/publishDDBStream.lambdaHandlerDdbStream",
+            "freeMemory": "151 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1339 MB",
+            "heapTotal": "645 MB",
+            "heapUsed": "454 MB",
+            "external": "33 MB",
+            "arrayBuffers": "14 MB"
+          }
+        },
+        {
+          "functionId": "c8b49e21c894c631830968dcff89854dde20ec8b31",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populateSourceOfFunds/lambda.handler",
+          "startTime": "2025-01-08T03:14:47.251Z",
+          "endTime": "2025-01-08T03:14:53.557Z",
+          "duration": 6306,
+          "buildDetails": {
+            "functionID": "c8b49e21c894c631830968dcff89854dde20ec8b31",
+            "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populateSourceOfFunds/lambda.handler",
+            "freeMemory": "309 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1341 MB",
+            "heapTotal": "645 MB",
+            "heapUsed": "454 MB",
+            "external": "35 MB",
+            "arrayBuffers": "16 MB"
+          }
+        },
+        {
+          "functionId": "c89af5d4758a7b90951fed528af785f2104c84fd1d",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populatePurposeOfAccounts/lambda.handler",
+          "startTime": "2025-01-08T03:14:47.251Z",
+          "endTime": "2025-01-08T03:14:53.557Z",
+          "duration": 6306,
+          "buildDetails": {
+            "functionID": "c89af5d4758a7b90951fed528af785f2104c84fd1d",
+            "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populatePurposeOfAccounts/lambda.handler",
+            "freeMemory": "309 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1341 MB",
+            "heapTotal": "645 MB",
+            "heapUsed": "454 MB",
+            "external": "35 MB",
+            "arrayBuffers": "16 MB"
+          }
+        },
+        {
+          "functionId": "c8c7a30fa2eaf65b97c3cae357c7620148cfcebd6d",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populateIndustries/lambda.handler",
+          "startTime": "2025-01-08T03:14:47.247Z",
+          "endTime": "2025-01-08T03:14:53.558Z",
+          "duration": 6311,
+          "buildDetails": {
+            "functionID": "c8c7a30fa2eaf65b97c3cae357c7620148cfcebd6d",
+            "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populateIndustries/lambda.handler",
+            "freeMemory": "309 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1341 MB",
+            "heapTotal": "645 MB",
+            "heapUsed": "454 MB",
+            "external": "35 MB",
+            "arrayBuffers": "16 MB"
+          }
+        },
+        {
+          "functionId": "c8c91a1094126f78d0a0701c35d357fec3166eeb1e",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populateOccupations/lambda.handler",
+          "startTime": "2025-01-08T03:14:47.246Z",
+          "endTime": "2025-01-08T03:14:53.558Z",
+          "duration": 6312,
+          "buildDetails": {
+            "functionID": "c8c91a1094126f78d0a0701c35d357fec3166eeb1e",
+            "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populateOccupations/lambda.handler",
+            "freeMemory": "309 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1341 MB",
+            "heapTotal": "645 MB",
+            "heapUsed": "454 MB",
+            "external": "35 MB",
+            "arrayBuffers": "16 MB"
+          }
+        },
+        {
+          "functionId": "c8a23c445b25d1d87089fb8cd73fc6aaa770d8ef5d",
+          "name": "stacks/customResource/auth0/appLevel.handler",
+          "startTime": "2025-01-08T03:14:47.244Z",
+          "endTime": "2025-01-08T03:14:53.703Z",
+          "duration": 6459,
+          "buildDetails": {
+            "functionID": "c8a23c445b25d1d87089fb8cd73fc6aaa770d8ef5d",
+            "handler": "stacks/customResource/auth0/appLevel.handler",
+            "freeMemory": "296 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1341 MB",
+            "heapTotal": "645 MB",
+            "heapUsed": "454 MB",
+            "external": "35 MB",
+            "arrayBuffers": "16 MB"
+          }
+        },
+        {
+          "functionId": "c8071a7c8f02cc43f2846a11311751420ec9b5b913",
+          "name": "services/opsConsole/stack/customResources/populateCounters/lambda.handler",
+          "startTime": "2025-01-08T03:14:51.414Z",
+          "endTime": "2025-01-08T03:14:55.115Z",
+          "duration": 3701,
+          "buildDetails": {
+            "functionID": "c8071a7c8f02cc43f2846a11311751420ec9b5b913",
+            "handler": "services/opsConsole/stack/customResources/populateCounters/lambda.handler",
+            "freeMemory": "234 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1371 MB",
+            "heapTotal": "488 MB",
+            "heapUsed": "431 MB",
+            "external": "50 MB",
+            "arrayBuffers": "30 MB"
+          }
+        },
+        {
+          "functionId": "c88b0db6b382b2ab00b670b8692fd3c63ece0ca0c7",
+          "name": "stacks/base/PlatformConfig/customResources/configInjection.handler",
+          "startTime": "2025-01-08T03:14:47.244Z",
+          "endTime": "2025-01-08T03:14:55.657Z",
+          "duration": 8413,
+          "buildDetails": {
+            "functionID": "c88b0db6b382b2ab00b670b8692fd3c63ece0ca0c7",
+            "handler": "stacks/base/PlatformConfig/customResources/configInjection.handler",
+            "freeMemory": "228 MB",
+            "totalMemory": "32768 MB",
+            "rss": "1373 MB",
+            "heapTotal": "488 MB",
+            "heapUsed": "431 MB",
+            "external": "54 MB",
+            "arrayBuffers": "35 MB"
+          }
+        }
+      ]
+    }
+  ],
+  "publishBlocks": [
+    {
+      "startTime": "2025-01-08T03:02:24.383Z",
+      "endTime": "2025-01-08T03:14:42.144Z",
+      "duration": 737761,
+      "stackDeploys": [
+        {
+          "name": "jez04-bosphorus-BaseInfra",
+          "startTime": "2025-01-08T03:02:27.343Z",
+          "endTime": "2025-01-08T03:05:11.721Z",
+          "duration": 164378,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:27.343Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:29.919Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:05:11.721Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-Logs",
+          "startTime": "2025-01-08T03:02:27.350Z",
+          "endTime": "2025-01-08T03:03:09.644Z",
+          "duration": 42294,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:27.350Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:30.109Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:03:09.644Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OnboardingAndIdentityMonitoring",
+          "startTime": "2025-01-08T03:02:27.385Z",
+          "endTime": "2025-01-08T03:02:58.508Z",
+          "duration": 31123,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:27.385Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:29.817Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:02:58.508Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-Persistence",
+          "startTime": "2025-01-08T03:02:27.454Z",
+          "endTime": "2025-01-08T03:03:32.007Z",
+          "duration": 64553,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:27.454Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:30.207Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:03:32.007Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TransactionBanking",
+          "startTime": "2025-01-08T03:02:27.514Z",
+          "endTime": "2025-01-08T03:02:59.042Z",
+          "duration": 31528,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:27.514Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:30.267Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:02:59.042Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbMonitoring",
+          "startTime": "2025-01-08T03:02:27.517Z",
+          "endTime": "2025-01-08T03:02:58.980Z",
+          "duration": 31463,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:27.517Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:02:30.231Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:02:58.980Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-Auth",
+          "startTime": "2025-01-08T03:05:11.767Z",
+          "endTime": "2025-01-08T03:06:42.752Z",
+          "duration": 90985,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:05:11.767Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:05:14.638Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:06:42.752Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OpsConsolePersistence",
+          "startTime": "2025-01-08T03:05:11.769Z",
+          "endTime": "2025-01-08T03:06:44.149Z",
+          "duration": 92380,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:05:11.769Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:05:14.510Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:06:44.149Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-BaseLambda",
+          "startTime": "2025-01-08T03:06:42.788Z",
+          "endTime": "2025-01-08T03:12:19.144Z",
+          "duration": 336356,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:06:42.788Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:06:44.477Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:12:19.144Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-DevStack",
+          "startTime": "2025-01-08T03:12:19.201Z",
+          "endTime": "2025-01-08T03:13:57.494Z",
+          "duration": 98293,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:19.201Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:21.639Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:13:57.494Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OnboardingAndIdentity",
+          "startTime": "2025-01-08T03:12:19.200Z",
+          "endTime": "2025-01-08T03:14:15.871Z",
+          "duration": 116671,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:19.200Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:22.226Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:14:15.871Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OnboardingAndIdentityEvents",
+          "startTime": "2025-01-08T03:12:19.188Z",
+          "endTime": "2025-01-08T03:14:37.078Z",
+          "duration": 137890,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:19.188Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:21.830Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:14:37.078Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OnboardingAndIdentityKYX",
+          "startTime": "2025-01-08T03:12:19.487Z",
+          "endTime": "2025-01-08T03:13:52.759Z",
+          "duration": 93272,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:19.487Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:21.666Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:13:52.759Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbAccounts",
+          "startTime": "2025-01-08T03:12:19.482Z",
+          "endTime": "2025-01-08T03:14:27.745Z",
+          "duration": 128263,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:19.482Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:21.788Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:14:27.745Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbBusinessBanking",
+          "startTime": "2025-01-08T03:12:19.545Z",
+          "endTime": "2025-01-08T03:14:12.038Z",
+          "duration": 112493,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:19.545Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:21.793Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:14:12.038Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbPayments",
+          "startTime": "2025-01-08T03:12:19.533Z",
+          "endTime": "2025-01-08T03:14:42.144Z",
+          "duration": 142611,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:19.533Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:21.748Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:14:42.144Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbTermDeposit",
+          "startTime": "2025-01-08T03:12:19.795Z",
+          "endTime": "2025-01-08T03:13:17.981Z",
+          "duration": 58186,
+          "status": "CREATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:19.795Z"
+            },
+            {
+              "status": "CREATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:12:21.634Z"
+            },
+            {
+              "status": "CREATE_COMPLETE",
+              "timestamp": "2025-01-08T03:13:17.981Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTime": "2025-01-08T03:14:56.932Z",
+      "endTime": "2025-01-08T03:15:39.777Z",
+      "duration": 42845,
+      "stackDeploys": [
+        {
+          "name": "jez04-bosphorus-BaseInfra",
+          "startTime": "2025-01-08T03:14:57.039Z",
+          "endTime": "2025-01-08T03:14:58.627Z",
+          "duration": 1588,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:14:57.039Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:14:58.627Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-Logs",
+          "startTime": "2025-01-08T03:14:57.040Z",
+          "endTime": "2025-01-08T03:14:58.481Z",
+          "duration": 1441,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:14:57.040Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:14:58.481Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OnboardingAndIdentityMonitoring",
+          "startTime": "2025-01-08T03:14:57.049Z",
+          "endTime": "2025-01-08T03:14:58.572Z",
+          "duration": 1523,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:14:57.049Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:14:58.572Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-Persistence",
+          "startTime": "2025-01-08T03:14:57.067Z",
+          "endTime": "2025-01-08T03:14:58.765Z",
+          "duration": 1698,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:14:57.067Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:14:58.765Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TransactionBanking",
+          "startTime": "2025-01-08T03:14:57.069Z",
+          "endTime": "2025-01-08T03:14:58.441Z",
+          "duration": 1372,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:14:57.069Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:14:58.441Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbMonitoring",
+          "startTime": "2025-01-08T03:14:57.078Z",
+          "endTime": "2025-01-08T03:14:58.454Z",
+          "duration": 1376,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:14:57.078Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:14:58.454Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-Auth",
+          "startTime": "2025-01-08T03:14:58.819Z",
+          "endTime": "2025-01-08T03:14:59.629Z",
+          "duration": 810,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:14:58.819Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:14:59.629Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OpsConsolePersistence",
+          "startTime": "2025-01-08T03:14:58.821Z",
+          "endTime": "2025-01-08T03:14:59.533Z",
+          "duration": 712,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:14:58.821Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:14:59.533Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-BaseLambda",
+          "startTime": "2025-01-08T03:14:59.683Z",
+          "endTime": "2025-01-08T03:15:37.237Z",
+          "duration": 37554,
+          "status": "UPDATE_COMPLETE",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:14:59.683Z"
+            },
+            {
+              "status": "UPDATE_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:15:01.039Z"
+            },
+            {
+              "status": "UPDATE_COMPLETE",
+              "timestamp": "2025-01-08T03:15:37.237Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-DevStack",
+          "startTime": "2025-01-08T03:15:37.286Z",
+          "endTime": "2025-01-08T03:15:39.200Z",
+          "duration": 1914,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:15:37.286Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:15:39.200Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OnboardingAndIdentity",
+          "startTime": "2025-01-08T03:15:37.295Z",
+          "endTime": "2025-01-08T03:15:39.671Z",
+          "duration": 2376,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:15:37.295Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:15:39.671Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OnboardingAndIdentityEvents",
+          "startTime": "2025-01-08T03:15:37.294Z",
+          "endTime": "2025-01-08T03:15:39.537Z",
+          "duration": 2243,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:15:37.294Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:15:39.537Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-OnboardingAndIdentityKYX",
+          "startTime": "2025-01-08T03:15:37.398Z",
+          "endTime": "2025-01-08T03:15:39.570Z",
+          "duration": 2172,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:15:37.398Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:15:39.570Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbAccounts",
+          "startTime": "2025-01-08T03:15:37.402Z",
+          "endTime": "2025-01-08T03:15:39.648Z",
+          "duration": 2246,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:15:37.402Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:15:39.648Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbBusinessBanking",
+          "startTime": "2025-01-08T03:15:37.379Z",
+          "endTime": "2025-01-08T03:15:39.552Z",
+          "duration": 2173,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:15:37.379Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:15:39.552Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbPayments",
+          "startTime": "2025-01-08T03:15:37.397Z",
+          "endTime": "2025-01-08T03:15:39.777Z",
+          "duration": 2380,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:15:37.397Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:15:39.777Z"
+            }
+          ]
+        },
+        {
+          "name": "jez04-bosphorus-TxbTermDeposit",
+          "startTime": "2025-01-08T03:15:37.394Z",
+          "endTime": "2025-01-08T03:15:39.271Z",
+          "duration": 1877,
+          "status": "SKIPPED",
+          "stages": [
+            {
+              "status": "PUBLISH_ASSETS_IN_PROGRESS",
+              "timestamp": "2025-01-08T03:15:37.394Z"
+            },
+            {
+              "status": "SKIPPED",
+              "timestamp": "2025-01-08T03:15:39.271Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

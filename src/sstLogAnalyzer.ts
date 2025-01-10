@@ -1,6 +1,6 @@
 interface FunctionBuild {
     functionId: string;
-    handler: string;
+    name: string;
     startTime: Date;
     endTime: Date;
     duration: number;  // in milliseconds
@@ -117,7 +117,7 @@ export class SSTLogAnalyzer {
                     if (build) {
                         const completeBuild: FunctionBuild = {
                             functionId: build.functionId!,
-                            handler: build.handler || 'unknown',
+                            name: build.name || 'unknown',
                             startTime: build.startTime!,
                             endTime: timestamp,
                             duration: timestamp.getTime() - build.startTime!.getTime(),
@@ -135,7 +135,7 @@ export class SSTLogAnalyzer {
             if (stats) {
                 const build = inProgressBuilds.get(stats.functionID);
                 if (build) {
-                    build.handler = stats.handler;
+                    build.name = stats.handler;
                     build.buildDetails = stats;
                 }
             }

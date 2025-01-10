@@ -9,7 +9,7 @@
       "functionBuilds": [
         {
           "functionId": "c89d53e2a54ce2b0ec799470fa9c31c2a95526b041",
-          "handler": "services/onboarding/cognito/verifyAuthChallenge.handler",
+          "name": "services/onboarding/cognito/verifyAuthChallenge.handler",
           "startTime": "2025-01-08T02:18:42.644Z",
           "endTime": "2025-01-08T02:18:50.731Z",
           "duration": 8087,
@@ -27,7 +27,7 @@
         },
         {
           "functionId": "c8ff90d108687ece486fb58524bd91d8f37b460da8",
-          "handler": "stacks/customResource/snsProvision/lambda.handler",
+          "name": "stacks/customResource/snsProvision/lambda.handler",
           "startTime": "2025-01-08T02:18:42.644Z",
           "endTime": "2025-01-08T02:18:50.731Z",
           "duration": 8087,
@@ -45,7 +45,7 @@
         },
         {
           "functionId": "c84d075e47319d92dd543d068b225e1df66f7971af",
-          "handler": "services/onboarding/cognito/preSignUp.handler",
+          "name": "services/onboarding/cognito/preSignUp.handler",
           "startTime": "2025-01-08T02:18:42.647Z",
           "endTime": "2025-01-08T02:18:50.731Z",
           "duration": 8084,
@@ -63,7 +63,7 @@
         },
         {
           "functionId": "c84e00c1c9a945d56cdd7a49581de6575dbe1d69d9",
-          "handler": "services/core/listeners/publishDDBStream.lambdaHandlerDdbStream",
+          "name": "services/core/listeners/publishDDBStream.lambdaHandlerDdbStream",
           "startTime": "2025-01-08T02:18:42.645Z",
           "endTime": "2025-01-08T02:18:50.763Z",
           "duration": 8118,
@@ -81,7 +81,7 @@
         },
         {
           "functionId": "c84e03ad72ea6f068e6a2b65842e55d770db62e001",
-          "handler": "services/onboarding/cognito/defineAuthChallenge.handler",
+          "name": "services/onboarding/cognito/defineAuthChallenge.handler",
           "startTime": "2025-01-08T02:18:42.647Z",
           "endTime": "2025-01-08T02:18:50.763Z",
           "duration": 8116,
@@ -99,7 +99,7 @@
         },
         {
           "functionId": "c86c00cbfd41f22a2f2fd1d99088129c92bfcf7f14",
-          "handler": "services/onboarding/cognito/createAuthChallenge.handler",
+          "name": "services/onboarding/cognito/createAuthChallenge.handler",
           "startTime": "2025-01-08T02:18:42.644Z",
           "endTime": "2025-01-08T02:18:50.771Z",
           "duration": 8127,
@@ -117,7 +117,7 @@
         },
         {
           "functionId": "c8827113b4e225b5c25ffc0ed54feed29ce34a3623",
-          "handler": "stacks/customResource/duplicateCerts/lambda.crossRegionCopyCerts",
+          "name": "stacks/customResource/duplicateCerts/lambda.crossRegionCopyCerts",
           "startTime": "2025-01-08T02:18:42.646Z",
           "endTime": "2025-01-08T02:18:50.772Z",
           "duration": 8126,
@@ -135,7 +135,7 @@
         },
         {
           "functionId": "c83f5cd0ae1d09d6480a136a894c10e95a2a91ce1d",
-          "handler": "stacks/customResource/auth0/appLevel.handler",
+          "name": "stacks/customResource/auth0/appLevel.handler",
           "startTime": "2025-01-08T02:18:42.645Z",
           "endTime": "2025-01-08T02:18:50.941Z",
           "duration": 8296,
@@ -153,7 +153,7 @@
         },
         {
           "functionId": "c8c5d6b77e642cc90e7eed47239f0acb975e33e791",
-          "handler": "services/functions/apiGateway/b2cApiGatewayAuthorizer.handler",
+          "name": "services/functions/apiGateway/b2cApiGatewayAuthorizer.handler",
           "startTime": "2025-01-08T02:18:50.930Z",
           "endTime": "2025-01-08T02:18:57.279Z",
           "duration": 6349,
@@ -171,7 +171,7 @@
         },
         {
           "functionId": "c86fd67fb38735904cf31fe497bcd272adbb28b4bc",
-          "handler": "services/platform/controllers/external/b2c/WebAppHandler_gen.handler",
+          "name": "services/platform/controllers/external/b2c/WebAppHandler_gen.handler",
           "startTime": "2025-01-08T02:18:51.766Z",
           "endTime": "2025-01-08T02:18:58.779Z",
           "duration": 7013,
@@ -189,7 +189,7 @@
         },
         {
           "functionId": "c8bcc90275f092dd990d44ae21195a63b55d0a0ed0",
-          "handler": "services/notifications/listeners/email.userHandler",
+          "name": "services/notifications/listeners/email.userHandler",
           "startTime": "2025-01-08T02:18:50.954Z",
           "endTime": "2025-01-08T02:19:00.097Z",
           "duration": 9143,
@@ -207,7 +207,7 @@
         },
         {
           "functionId": "c841b4740d42be5159ee82f42a2a3614e43c79e868",
-          "handler": "services/notifications/listeners/email.entityHandler",
+          "name": "services/notifications/listeners/email.entityHandler",
           "startTime": "2025-01-08T02:18:51.015Z",
           "endTime": "2025-01-08T02:19:00.097Z",
           "duration": 9082,
@@ -225,7 +225,7 @@
         },
         {
           "functionId": "c83629e799a239ee31dfd95a3915c236282fd29e9c",
-          "handler": "stacks/base/PlatformConfig/customResources/configInjection.handler",
+          "name": "stacks/base/PlatformConfig/customResources/configInjection.handler",
           "startTime": "2025-01-08T02:18:51.038Z",
           "endTime": "2025-01-08T02:19:04.407Z",
           "duration": 13369,
@@ -243,7 +243,7 @@
         },
         {
           "functionId": "c846bffbe3ac08b3495cd1f529fd54b54708e4c17c",
-          "handler": "services/core/schedule/scheduled.handler",
+          "name": "services/core/schedule/scheduled.handler",
           "startTime": "2025-01-08T02:18:51.038Z",
           "endTime": "2025-01-08T02:19:05.321Z",
           "duration": 14283,
@@ -261,7 +261,7 @@
         },
         {
           "functionId": "c894892e6ef458556740dbd584b40af038decc753e",
-          "handler": "services/config/controllers/ConfigController/ConfigHandler_gen.handler",
+          "name": "services/config/controllers/ConfigController/ConfigHandler_gen.handler",
           "startTime": "2025-01-08T02:18:51.757Z",
           "endTime": "2025-01-08T02:19:08.708Z",
           "duration": 16951,
@@ -279,7 +279,7 @@
         },
         {
           "functionId": "c8e0e5a7554a0db32db2822070d3b81d3ae9c77b36",
-          "handler": "services/config/controllers/FeatureToggles/FeatureToggleHandler.handler",
+          "name": "services/config/controllers/FeatureToggles/FeatureToggleHandler.handler",
           "startTime": "2025-01-08T02:18:57.530Z",
           "endTime": "2025-01-08T02:19:08.709Z",
           "duration": 11179,
@@ -297,7 +297,7 @@
         },
         {
           "functionId": "c821f1a050cba42b2d225eb41eed38fc8169dfc387",
-          "handler": "services/onboarding/utils/ingestBlocklistHandler.handler",
+          "name": "services/onboarding/utils/ingestBlocklistHandler.handler",
           "startTime": "2025-01-08T02:19:00.888Z",
           "endTime": "2025-01-08T02:19:08.709Z",
           "duration": 7821,
@@ -315,7 +315,7 @@
         },
         {
           "functionId": "c8a8dca0a51f291977df11f5279782b24aab98ab48",
-          "handler": "services/onboarding/cognito/preTokenGeneration.handler",
+          "name": "services/onboarding/cognito/preTokenGeneration.handler",
           "startTime": "2025-01-08T02:18:42.645Z",
           "endTime": "2025-01-08T02:19:09.008Z",
           "duration": 26363,
@@ -333,7 +333,7 @@
         },
         {
           "functionId": "c8a20ef6dd4e893778ea32c2e5e139eb15ebefedbf",
-          "handler": "services/notifications/listeners/common.handler",
+          "name": "services/notifications/listeners/common.handler",
           "startTime": "2025-01-08T02:18:51.038Z",
           "endTime": "2025-01-08T02:19:14.081Z",
           "duration": 23043,
@@ -351,7 +351,7 @@
         },
         {
           "functionId": "c85d551e8c1488c7be481a658f15329cec5649f527",
-          "handler": "services/onboarding/controllers/CdrOpenBanking/CdrAuthorisationHandler_gen.handler",
+          "name": "services/onboarding/controllers/CdrOpenBanking/CdrAuthorisationHandler_gen.handler",
           "startTime": "2025-01-08T02:19:06.261Z",
           "endTime": "2025-01-08T02:19:18.678Z",
           "duration": 12417,
@@ -369,7 +369,7 @@
         },
         {
           "functionId": "c8200f5ef9067865786676a8e4900e1cff251e863c",
-          "handler": "services/onboarding/controllers/SignUp/SignUpHandler_gen.handler",
+          "name": "services/onboarding/controllers/SignUp/SignUpHandler_gen.handler",
           "startTime": "2025-01-08T02:19:10.161Z",
           "endTime": "2025-01-08T02:19:18.679Z",
           "duration": 8518,
@@ -387,7 +387,7 @@
         },
         {
           "functionId": "c84064edd1e5e82a7c220d3fe84c2d0c994742e4fe",
-          "handler": "services/onboarding/controllers/Login/LoginHandler_gen.handler",
+          "name": "services/onboarding/controllers/Login/LoginHandler_gen.handler",
           "startTime": "2025-01-08T02:19:09.683Z",
           "endTime": "2025-01-08T02:19:18.679Z",
           "duration": 8996,
@@ -405,7 +405,7 @@
         },
         {
           "functionId": "c87c7ecba756c6c4074c763e488e65d720aed2c75c",
-          "handler": "services/onboarding/controllers/CdrOpenBanking/CdrConsentHandler_gen.handler",
+          "name": "services/onboarding/controllers/CdrOpenBanking/CdrConsentHandler_gen.handler",
           "startTime": "2025-01-08T02:19:05.115Z",
           "endTime": "2025-01-08T02:19:18.679Z",
           "duration": 13564,
@@ -423,7 +423,7 @@
         },
         {
           "functionId": "c85c37ac6792394072da1c10a14ab58803e6db0864",
-          "handler": "services/onboarding/controllers/CdrOpenBanking/CdrArrangementHandler_gen.handler",
+          "name": "services/onboarding/controllers/CdrOpenBanking/CdrArrangementHandler_gen.handler",
           "startTime": "2025-01-08T02:19:09.475Z",
           "endTime": "2025-01-08T02:19:18.684Z",
           "duration": 9209,
@@ -441,7 +441,7 @@
         },
         {
           "functionId": "c85c2368ea9d92c1c2fcaf15f89f77c5cbdfde8494",
-          "handler": "services/config/controllers/product-configuration.setActiveConfigs",
+          "name": "services/config/controllers/product-configuration.setActiveConfigs",
           "startTime": "2025-01-08T02:18:59.021Z",
           "endTime": "2025-01-08T02:19:18.846Z",
           "duration": 19825,
@@ -459,7 +459,7 @@
         },
         {
           "functionId": "c88e06abf452064f8ae88432ef46926000b64d991f",
-          "handler": "services/core/migrations/handler.handler",
+          "name": "services/core/migrations/handler.handler",
           "startTime": "2025-01-08T02:19:00.888Z",
           "endTime": "2025-01-08T02:19:18.846Z",
           "duration": 17958,
@@ -477,7 +477,7 @@
         },
         {
           "functionId": "c8a3759c0e5ab5890f154211412c5e206ae81287f2",
-          "handler": "services/onboarding/controllers/Auth0/SessionHandler_gen.handler",
+          "name": "services/onboarding/controllers/Auth0/SessionHandler_gen.handler",
           "startTime": "2025-01-08T02:19:14.077Z",
           "endTime": "2025-01-08T02:19:24.622Z",
           "duration": 10545,
@@ -495,7 +495,7 @@
         },
         {
           "functionId": "c89d112811b99a0c75daf2d98da72806478bd93d61",
-          "handler": "services/platform/controllers/external/services/Auth0HooksHandler_gen.handler",
+          "name": "services/platform/controllers/external/services/Auth0HooksHandler_gen.handler",
           "startTime": "2025-01-08T02:19:17.105Z",
           "endTime": "2025-01-08T02:19:24.622Z",
           "duration": 7517,
@@ -513,7 +513,7 @@
         },
         {
           "functionId": "c89d40c105de826fed683ad4fc70c69dbe156d87e1",
-          "handler": "services/onboarding/controllers/external/b2c/UsersHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2c/UsersHandler_gen.handler",
           "startTime": "2025-01-08T02:19:19.513Z",
           "endTime": "2025-01-08T02:19:30.609Z",
           "duration": 11096,
@@ -531,7 +531,7 @@
         },
         {
           "functionId": "c88a8a1d440ecd0577a4044c5e85407f8d2bfde1cd",
-          "handler": "services/onboarding/controllers/external/b2c/MfaHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2c/MfaHandler_gen.handler",
           "startTime": "2025-01-08T02:19:19.999Z",
           "endTime": "2025-01-08T02:19:30.609Z",
           "duration": 10610,
@@ -549,7 +549,7 @@
         },
         {
           "functionId": "c8fc53862d4fb944714c2a7b6265f30131dffddbf8",
-          "handler": "services/onboarding/controllers/BusinessEntityAccountController/handler_gen.handler",
+          "name": "services/onboarding/controllers/BusinessEntityAccountController/handler_gen.handler",
           "startTime": "2025-01-08T02:19:20.000Z",
           "endTime": "2025-01-08T02:19:32.379Z",
           "duration": 12379,
@@ -567,7 +567,7 @@
         },
         {
           "functionId": "c8c0aa2aedd33ccf3fe8ab2ede52e0758f2aa0ee0d",
-          "handler": "services/test/utils/kybBypassfixture.handler",
+          "name": "services/test/utils/kybBypassfixture.handler",
           "startTime": "2025-01-08T02:19:21.626Z",
           "endTime": "2025-01-08T02:19:34.750Z",
           "duration": 13124,
@@ -585,7 +585,7 @@
         },
         {
           "functionId": "c826e5e5054cdc66fd287a18c5ef080a3e27da5132",
-          "handler": "services/onboarding/controllers/ComplianceController/ComplianceHandler_gen.handler",
+          "name": "services/onboarding/controllers/ComplianceController/ComplianceHandler_gen.handler",
           "startTime": "2025-01-08T02:19:21.456Z",
           "endTime": "2025-01-08T02:19:37.167Z",
           "duration": 15711,
@@ -603,7 +603,7 @@
         },
         {
           "functionId": "c89a1bca68f024ff4bdd86cde4a26545bd99adf957",
-          "handler": "services/onboarding/controllers/external/b2c/BankingEntityHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2c/BankingEntityHandler_gen.handler",
           "startTime": "2025-01-08T02:19:20.813Z",
           "endTime": "2025-01-08T02:19:37.167Z",
           "duration": 16354,
@@ -621,7 +621,7 @@
         },
         {
           "functionId": "c8a7059153ffb88f0cdd97ee5721c961425de68c70",
-          "handler": "services/onboarding/controllers/external/b2c/OnboardingHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2c/OnboardingHandler_gen.handler",
           "startTime": "2025-01-08T02:19:21.528Z",
           "endTime": "2025-01-08T02:19:37.171Z",
           "duration": 15643,
@@ -639,7 +639,7 @@
         },
         {
           "functionId": "c8f99dfdf025bc22472a10cc0e21d42a8458638b75",
-          "handler": "services/onboarding/controllers/OnboardingOps/onboardingOpsHandler.handler",
+          "name": "services/onboarding/controllers/OnboardingOps/onboardingOpsHandler.handler",
           "startTime": "2025-01-08T02:19:25.523Z",
           "endTime": "2025-01-08T02:19:37.171Z",
           "duration": 11648,
@@ -657,7 +657,7 @@
         },
         {
           "functionId": "c8cfef0b5193e0cb4e665c567703f68d6bd7575500",
-          "handler": "services/test/utils/createTestUser.handler",
+          "name": "services/test/utils/createTestUser.handler",
           "startTime": "2025-01-08T02:19:25.523Z",
           "endTime": "2025-01-08T02:19:37.175Z",
           "duration": 11652,
@@ -675,7 +675,7 @@
         },
         {
           "functionId": "c875eb391cbfd4b2e7d5e8372fd601ce72e391d707",
-          "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populatePurposeOfAccounts/lambda.handler",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populatePurposeOfAccounts/lambda.handler",
           "startTime": "2025-01-08T02:19:34.727Z",
           "endTime": "2025-01-08T02:19:40.971Z",
           "duration": 6244,
@@ -693,7 +693,7 @@
         },
         {
           "functionId": "c88e5b36f1d0766f9918f0d5cd975b6d0d035dbc69",
-          "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populateSourceOfFunds/lambda.handler",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populateSourceOfFunds/lambda.handler",
           "startTime": "2025-01-08T02:19:35.471Z",
           "endTime": "2025-01-08T02:19:40.971Z",
           "duration": 5500,
@@ -711,7 +711,7 @@
         },
         {
           "functionId": "c87bdd4df385fae1a3f1fc2e1b83bb17a83882c5f3",
-          "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populateIndustries/lambda.handler",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populateIndustries/lambda.handler",
           "startTime": "2025-01-08T02:19:32.263Z",
           "endTime": "2025-01-08T02:19:40.972Z",
           "duration": 8709,
@@ -729,7 +729,7 @@
         },
         {
           "functionId": "c874ec8189b4352c27cbaf20f622ead379e79f2034",
-          "handler": "stacks/squadStacks/onboardingAndIdentity/customResources/populateOccupations/lambda.handler",
+          "name": "stacks/squadStacks/onboardingAndIdentity/customResources/populateOccupations/lambda.handler",
           "startTime": "2025-01-08T02:19:32.345Z",
           "endTime": "2025-01-08T02:19:40.972Z",
           "duration": 8627,
@@ -747,7 +747,7 @@
         },
         {
           "functionId": "c879499a84d370d5a8a00c4427438e44e7e4f5f076",
-          "handler": "services/onboarding/controllers/external/b2b/UsersHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2b/UsersHandler_gen.handler",
           "startTime": "2025-01-08T02:19:39.189Z",
           "endTime": "2025-01-08T02:19:47.845Z",
           "duration": 8656,
@@ -765,7 +765,7 @@
         },
         {
           "functionId": "c86d19c508de1c8b3f561e1563b0fa6ded63213bd4",
-          "handler": "services/onboarding/controllers/external/b2b/BankingEntityHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2b/BankingEntityHandler_gen.handler",
           "startTime": "2025-01-08T02:19:39.334Z",
           "endTime": "2025-01-08T02:19:47.845Z",
           "duration": 8511,
@@ -783,7 +783,7 @@
         },
         {
           "functionId": "c8bb30aeb8b92db636ce8e892ec3b53a66430d9cfe",
-          "handler": "services/onboarding/listeners/UserEntityMapListener.handler",
+          "name": "services/onboarding/listeners/UserEntityMapListener.handler",
           "startTime": "2025-01-08T02:19:39.335Z",
           "endTime": "2025-01-08T02:19:47.846Z",
           "duration": 8511,
@@ -801,7 +801,7 @@
         },
         {
           "functionId": "c8e83433a8ee329f7a37075d650c1a8ae90ae41ab4",
-          "handler": "services/onboarding/controllers/external/b2b/KycHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2b/KycHandler_gen.handler",
           "startTime": "2025-01-08T02:19:38.252Z",
           "endTime": "2025-01-08T02:19:47.846Z",
           "duration": 9594,
@@ -819,7 +819,7 @@
         },
         {
           "functionId": "c85ab6ae9c708b4e5d73bf9b4a00f973eeb9e0b0e5",
-          "handler": "services/onboarding/controllers/external/b2b/KybHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2b/KybHandler_gen.handler",
           "startTime": "2025-01-08T02:19:39.224Z",
           "endTime": "2025-01-08T02:19:48.243Z",
           "duration": 9019,
@@ -837,7 +837,7 @@
         },
         {
           "functionId": "c8c2bc9de8678378f3b21d0623efa4a919c54b0c21",
-          "handler": "services/onboarding/listeners/kybApplication/kybApplicationListener.sqsHandler",
+          "name": "services/onboarding/listeners/kybApplication/kybApplicationListener.sqsHandler",
           "startTime": "2025-01-08T02:19:41.493Z",
           "endTime": "2025-01-08T02:19:52.836Z",
           "duration": 11343,
@@ -855,7 +855,7 @@
         },
         {
           "functionId": "c8cb6aecd39f182d7da4cddd9414a670f45b52321e",
-          "handler": "services/onboarding/listeners/kycApplication/kycApplicationListener.sqsHandler",
+          "name": "services/onboarding/listeners/kycApplication/kycApplicationListener.sqsHandler",
           "startTime": "2025-01-08T02:19:41.328Z",
           "endTime": "2025-01-08T02:19:52.836Z",
           "duration": 11508,
@@ -873,7 +873,7 @@
         },
         {
           "functionId": "c80ea5205975238a8cbbf1953f5641fc784a46bd85",
-          "handler": "services/onboarding/listeners/InviteListener.ttlListener",
+          "name": "services/onboarding/listeners/InviteListener.ttlListener",
           "startTime": "2025-01-08T02:19:41.328Z",
           "endTime": "2025-01-08T02:19:52.836Z",
           "duration": 11508,
@@ -891,7 +891,7 @@
         },
         {
           "functionId": "c881daa24c848a5eb7d90398610f8008041752b1a9",
-          "handler": "services/onboarding/listeners/frankieOne/f1AsyncCallbackHandler.sqsHandler",
+          "name": "services/onboarding/listeners/frankieOne/f1AsyncCallbackHandler.sqsHandler",
           "startTime": "2025-01-08T02:19:41.495Z",
           "endTime": "2025-01-08T02:19:52.836Z",
           "duration": 11341,
@@ -909,7 +909,7 @@
         },
         {
           "functionId": "c86ebdcb960136dc8fbda57c5da72704b1746887d8",
-          "handler": "services/onboarding/listeners/blocklist/blocklistListener.handler",
+          "name": "services/onboarding/listeners/blocklist/blocklistListener.handler",
           "startTime": "2025-01-08T02:19:51.316Z",
           "endTime": "2025-01-08T02:19:57.094Z",
           "duration": 5778,
@@ -927,7 +927,7 @@
         },
         {
           "functionId": "c834a6e4768671d93c2a83fade11e57ce45ff3239d",
-          "handler": "services/onboarding/listeners/blocklist/blocklistS3Listener.handler",
+          "name": "services/onboarding/listeners/blocklist/blocklistS3Listener.handler",
           "startTime": "2025-01-08T02:19:51.430Z",
           "endTime": "2025-01-08T02:19:57.094Z",
           "duration": 5664,
@@ -945,7 +945,7 @@
         },
         {
           "functionId": "c85255eaec463f001ffbd782852f689225c999768f",
-          "handler": "services/onboarding/listeners/User/UserListener.handler",
+          "name": "services/onboarding/listeners/User/UserListener.handler",
           "startTime": "2025-01-08T02:19:50.843Z",
           "endTime": "2025-01-08T02:20:00.112Z",
           "duration": 9269,
@@ -963,7 +963,7 @@
         },
         {
           "functionId": "c89b6750e5fe85e1b42a2f0d5a313d08a1bfaa879a",
-          "handler": "services/onboarding/listeners/TenxEventsListener.handler",
+          "name": "services/onboarding/listeners/TenxEventsListener.handler",
           "startTime": "2025-01-08T02:19:50.938Z",
           "endTime": "2025-01-08T02:20:00.112Z",
           "duration": 9174,
@@ -981,7 +981,7 @@
         },
         {
           "functionId": "c8c36c1f883c5ad99753dd26e4c61059d39976f46a",
-          "handler": "services/onboarding/listeners/connectCase/connectCaseListener.handler",
+          "name": "services/onboarding/listeners/connectCase/connectCaseListener.handler",
           "startTime": "2025-01-08T02:19:50.938Z",
           "endTime": "2025-01-08T02:20:00.112Z",
           "duration": 9174,
@@ -999,7 +999,7 @@
         },
         {
           "functionId": "c8bad3138e6a4c11e2d2478225a09d1cdfdd7ee3cb",
-          "handler": "services/onboarding/listeners/document/OnboardingDocumentListener.onDocumentAvScanFinishedHandler",
+          "name": "services/onboarding/listeners/document/OnboardingDocumentListener.onDocumentAvScanFinishedHandler",
           "startTime": "2025-01-08T02:19:53.664Z",
           "endTime": "2025-01-08T02:20:02.865Z",
           "duration": 9201,
@@ -1017,7 +1017,7 @@
         },
         {
           "functionId": "c8899daed25c7c63371a5e2a4b0127f14233bb55af",
-          "handler": "services/onboarding/service/Kyb/statemachineHandler.handler",
+          "name": "services/onboarding/service/Kyb/statemachineHandler.handler",
           "startTime": "2025-01-08T02:19:57.761Z",
           "endTime": "2025-01-08T02:20:04.454Z",
           "duration": 6693,
@@ -1035,7 +1035,7 @@
         },
         {
           "functionId": "c8552972fbf6e686f453b74a6b75360adcc321ddfd",
-          "handler": "services/onboarding/listeners/blocklist/userUpdateListener.handler",
+          "name": "services/onboarding/listeners/blocklist/userUpdateListener.handler",
           "startTime": "2025-01-08T02:19:57.754Z",
           "endTime": "2025-01-08T02:20:04.454Z",
           "duration": 6700,
@@ -1053,7 +1053,7 @@
         },
         {
           "functionId": "c838c8b5af1e54b49d4f8fa6cac95cc6f277108aae",
-          "handler": "services/onboarding/service/Kyc/statemachineHandler.handler",
+          "name": "services/onboarding/service/Kyc/statemachineHandler.handler",
           "startTime": "2025-01-08T02:20:02.866Z",
           "endTime": "2025-01-08T02:20:10.629Z",
           "duration": 7763,
@@ -1071,7 +1071,7 @@
         },
         {
           "functionId": "c8fe0fb341d2926477d253340dab44927dd3945ac0",
-          "handler": "services/onboarding/listeners/blocklist/blocklistSftpListener.sftpDownloadProcessor",
+          "name": "services/onboarding/listeners/blocklist/blocklistSftpListener.sftpDownloadProcessor",
           "startTime": "2025-01-08T02:19:54.266Z",
           "endTime": "2025-01-08T02:20:12.173Z",
           "duration": 17907,
@@ -1089,7 +1089,7 @@
         },
         {
           "functionId": "c80bad71c319b1af984ed3609b1b09f6155c26d191",
-          "handler": "services/onboarding/listeners/blocklist/blocklistSftpListener.sftpDownloadHandler",
+          "name": "services/onboarding/listeners/blocklist/blocklistSftpListener.sftpDownloadHandler",
           "startTime": "2025-01-08T02:19:53.680Z",
           "endTime": "2025-01-08T02:20:12.174Z",
           "duration": 18494,
@@ -1107,7 +1107,7 @@
         },
         {
           "functionId": "c8962bd43ee91962a5eeb669023cbecdc0466fee55",
-          "handler": "services/onboarding/listeners/blocklist/blocklistSftpListener.sftpUploadProcessHandler",
+          "name": "services/onboarding/listeners/blocklist/blocklistSftpListener.sftpUploadProcessHandler",
           "startTime": "2025-01-08T02:19:54.342Z",
           "endTime": "2025-01-08T02:20:12.175Z",
           "duration": 17833,
@@ -1125,7 +1125,7 @@
         },
         {
           "functionId": "c807d50712ffeb86d60a27cb171ba06d5129858611",
-          "handler": "services/transactionBanking/listeners/paymentRequestListener.ttlListener",
+          "name": "services/transactionBanking/listeners/paymentRequestListener.ttlListener",
           "startTime": "2025-01-08T02:20:05.008Z",
           "endTime": "2025-01-08T02:20:12.333Z",
           "duration": 7325,
@@ -1143,7 +1143,7 @@
         },
         {
           "functionId": "c8e84cdd85ffeb3472297ce20c5fec35f5bf3ca29e",
-          "handler": "services/onboarding/controllers/external/b2c/KycHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2c/KycHandler_gen.handler",
           "startTime": "2025-01-08T02:20:03.022Z",
           "endTime": "2025-01-08T02:20:12.333Z",
           "duration": 9311,
@@ -1161,7 +1161,7 @@
         },
         {
           "functionId": "c8ea9bd467ff6a9ed8aff99d3cb6523584808df344",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/PaymentsV3Handler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/PaymentsV3Handler_gen.handler",
           "startTime": "2025-01-08T02:20:03.090Z",
           "endTime": "2025-01-08T02:20:16.676Z",
           "duration": 13586,
@@ -1179,7 +1179,7 @@
         },
         {
           "functionId": "c8b110a04dd9b0d72865d080407531f46d613fe0b5",
-          "handler": "services/onboarding/controllers/external/b2c/KybHandler_gen.handler",
+          "name": "services/onboarding/controllers/external/b2c/KybHandler_gen.handler",
           "startTime": "2025-01-08T02:20:02.840Z",
           "endTime": "2025-01-08T02:20:17.366Z",
           "duration": 14526,
@@ -1197,7 +1197,7 @@
         },
         {
           "functionId": "c8d49772100affa6a3db06fc0d60d3344f2990f043",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/TransactionsHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/TransactionsHandler_gen.handler",
           "startTime": "2025-01-08T02:20:05.055Z",
           "endTime": "2025-01-08T02:20:21.859Z",
           "duration": 16804,
@@ -1215,7 +1215,7 @@
         },
         {
           "functionId": "c8fbf417c9dc220756ac89897e535f59ae58085465",
-          "handler": "services/transactionBanking/listeners/cards/instantProvisioning.sqsHandler",
+          "name": "services/transactionBanking/listeners/cards/instantProvisioning.sqsHandler",
           "startTime": "2025-01-08T02:20:15.134Z",
           "endTime": "2025-01-08T02:20:24.920Z",
           "duration": 9786,
@@ -1233,7 +1233,7 @@
         },
         {
           "functionId": "c81dfa5079d7acbaa34e0a8616235f93d669d31cce",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/CardHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/CardHandler_gen.handler",
           "startTime": "2025-01-08T02:20:15.537Z",
           "endTime": "2025-01-08T02:20:25.524Z",
           "duration": 9987,
@@ -1251,7 +1251,7 @@
         },
         {
           "functionId": "c8d30916e2f01fe493a19c20544e9508025bb46168",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/CardPubKeyHandler_static.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/CardPubKeyHandler_static.handler",
           "startTime": "2025-01-08T02:20:16.728Z",
           "endTime": "2025-01-08T02:20:25.524Z",
           "duration": 8796,
@@ -1269,7 +1269,7 @@
         },
         {
           "functionId": "c8796d61ea9b6a5a9d2d46e61a98d23ceafc79ebb6",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/PayIdHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/PayIdHandler_gen.handler",
           "startTime": "2025-01-08T02:20:15.129Z",
           "endTime": "2025-01-08T02:20:27.111Z",
           "duration": 11982,
@@ -1287,7 +1287,7 @@
         },
         {
           "functionId": "c81bff774b9e546a153df1bccf4cedbbc30d2cac72",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/BatchTransferHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/BatchTransferHandler_gen.handler",
           "startTime": "2025-01-08T02:20:12.331Z",
           "endTime": "2025-01-08T02:20:29.191Z",
           "duration": 16860,
@@ -1305,7 +1305,7 @@
         },
         {
           "functionId": "c8aef64cf4441cd40d26703aa99541e8e7352ad9d8",
-          "handler": "services/transactionBanking/listeners/cards/router.sqsHandler",
+          "name": "services/transactionBanking/listeners/cards/router.sqsHandler",
           "startTime": "2025-01-08T02:20:17.465Z",
           "endTime": "2025-01-08T02:20:35.246Z",
           "duration": 17781,
@@ -1323,7 +1323,7 @@
         },
         {
           "functionId": "c8075f78473820ec2bc97debfc160b4897656d026a",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/PayeesHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/PayeesHandler_gen.handler",
           "startTime": "2025-01-08T02:20:22.365Z",
           "endTime": "2025-01-08T02:20:39.159Z",
           "duration": 16794,
@@ -1341,7 +1341,7 @@
         },
         {
           "functionId": "c80a0f4c9423c2807de426bfa00162c9805e09d8d7",
-          "handler": "services/transactionBanking/listeners/overdraftsListener.overdraftHandler",
+          "name": "services/transactionBanking/listeners/overdraftsListener.overdraftHandler",
           "startTime": "2025-01-08T02:20:26.619Z",
           "endTime": "2025-01-08T02:20:39.160Z",
           "duration": 12541,
@@ -1359,7 +1359,7 @@
         },
         {
           "functionId": "c8182c2b5d712cf1d4c687797b8f8bf07066ebd05b",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/CardsV2Handler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/CardsV2Handler_gen.handler",
           "startTime": "2025-01-08T02:20:16.677Z",
           "endTime": "2025-01-08T02:20:39.161Z",
           "duration": 22484,
@@ -1377,7 +1377,7 @@
         },
         {
           "functionId": "c82297ba27d98abc80f9317874ff2eff41a94c2b2a",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/BpayHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/BpayHandler_gen.handler",
           "startTime": "2025-01-08T02:20:25.386Z",
           "endTime": "2025-01-08T02:20:40.478Z",
           "duration": 15092,
@@ -1395,7 +1395,7 @@
         },
         {
           "functionId": "c8ee6d19fdc7b60cf95fc4fa553761eda69be50b6c",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/PayToHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/PayToHandler_gen.handler",
           "startTime": "2025-01-08T02:20:19.728Z",
           "endTime": "2025-01-08T02:20:40.478Z",
           "duration": 20750,
@@ -1413,7 +1413,7 @@
         },
         {
           "functionId": "c8eb16cdbe6514f2ade924d7e06283fd6f21fa9cdc",
-          "handler": "services/transactionBanking/listeners/overdraftsListener.creditHandler",
+          "name": "services/transactionBanking/listeners/overdraftsListener.creditHandler",
           "startTime": "2025-01-08T02:20:27.845Z",
           "endTime": "2025-01-08T02:20:40.478Z",
           "duration": 12633,
@@ -1431,7 +1431,7 @@
         },
         {
           "functionId": "c8ccac945cfb9d620cdcf7720497d6310cd5cf6eaa",
-          "handler": "services/transactionBanking/listeners/scheduledPayments/schedPayments.sqsHandler",
+          "name": "services/transactionBanking/listeners/scheduledPayments/schedPayments.sqsHandler",
           "startTime": "2025-01-08T02:20:35.238Z",
           "endTime": "2025-01-08T02:20:45.102Z",
           "duration": 9864,
@@ -1449,7 +1449,7 @@
         },
         {
           "functionId": "c888edead5deae0e9ffdf06053156bf53411e0506f",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/PaymentsHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/PaymentsHandler_gen.handler",
           "startTime": "2025-01-08T02:20:26.526Z",
           "endTime": "2025-01-08T02:20:45.103Z",
           "duration": 18577,
@@ -1467,7 +1467,7 @@
         },
         {
           "functionId": "c8e86e044775973640974d45e6134a384b1e6e4fa4",
-          "handler": "services/transactionBanking/nonApiHandlers/cardSuspenseHandler.handler",
+          "name": "services/transactionBanking/nonApiHandlers/cardSuspenseHandler.handler",
           "startTime": "2025-01-08T02:20:35.875Z",
           "endTime": "2025-01-08T02:20:45.103Z",
           "duration": 9228,
@@ -1485,7 +1485,7 @@
         },
         {
           "functionId": "c87cd18a5d412c08da6e4a2589cb9a37ce6f2cbe82",
-          "handler": "services/transactionBanking/statements/generateMonthlyStatement.handler",
+          "name": "services/transactionBanking/statements/generateMonthlyStatement.handler",
           "startTime": "2025-01-08T02:20:42.743Z",
           "endTime": "2025-01-08T02:20:49.866Z",
           "duration": 7123,
@@ -1503,7 +1503,7 @@
         },
         {
           "functionId": "c8fd17c1e0643f3288b3f461e3ac0315617b2e3a48",
-          "handler": "services/transactionBanking/listeners/cards/replacedCard.handler",
+          "name": "services/transactionBanking/listeners/cards/replacedCard.handler",
           "startTime": "2025-01-08T02:20:41.618Z",
           "endTime": "2025-01-08T02:20:53.092Z",
           "duration": 11474,
@@ -1521,7 +1521,7 @@
         },
         {
           "functionId": "c883b6deb716a59f9c54cfe30852c300d881505a84",
-          "handler": "services/transactionBanking/nonApiHandlers/replaceCard.handler",
+          "name": "services/transactionBanking/nonApiHandlers/replaceCard.handler",
           "startTime": "2025-01-08T02:20:41.157Z",
           "endTime": "2025-01-08T02:20:53.094Z",
           "duration": 11937,
@@ -1539,7 +1539,7 @@
         },
         {
           "functionId": "c8ce93b19016c8fa5ba484ea83f21a2352fc356bf7",
-          "handler": "services/transactionBanking/statements/automatedMonthlyStatement.handler",
+          "name": "services/transactionBanking/statements/automatedMonthlyStatement.handler",
           "startTime": "2025-01-08T02:20:45.846Z",
           "endTime": "2025-01-08T02:20:53.094Z",
           "duration": 7248,
@@ -1557,7 +1557,7 @@
         },
         {
           "functionId": "c84a7180f8b50b0be76c93c7834d79359050ac7cf2",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/StatementHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/StatementHandler_gen.handler",
           "startTime": "2025-01-08T02:20:42.682Z",
           "endTime": "2025-01-08T02:20:54.064Z",
           "duration": 11382,
@@ -1575,7 +1575,7 @@
         },
         {
           "functionId": "c84d95b4fcdde4c391be60166d3e2c40429d648bee",
-          "handler": "services/transactionBanking/statements/generateStatement.handler",
+          "name": "services/transactionBanking/statements/generateStatement.handler",
           "startTime": "2025-01-08T02:20:41.667Z",
           "endTime": "2025-01-08T02:20:54.064Z",
           "duration": 12397,
@@ -1593,7 +1593,7 @@
         },
         {
           "functionId": "c8ae3dc98440d3fb1b3f6fc1a8bb73932f94b6546a",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/PaymentLimitsHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/PaymentLimitsHandler_gen.handler",
           "startTime": "2025-01-08T02:20:40.475Z",
           "endTime": "2025-01-08T02:20:58.196Z",
           "duration": 17721,
@@ -1611,7 +1611,7 @@
         },
         {
           "functionId": "c8cfc5613976cc90e11846ca96f7a540031fc2d0db",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/SubscriptionHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/SubscriptionHandler_gen.handler",
           "startTime": "2025-01-08T02:20:46.555Z",
           "endTime": "2025-01-08T02:20:58.196Z",
           "duration": 11641,
@@ -1629,7 +1629,7 @@
         },
         {
           "functionId": "c854cad4facccb0c6312dcd5a761e1aef833571dd4",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/AccountsV2Handler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/AccountsV2Handler_gen.handler",
           "startTime": "2025-01-08T02:20:46.651Z",
           "endTime": "2025-01-08T02:20:58.196Z",
           "duration": 11545,
@@ -1647,7 +1647,7 @@
         },
         {
           "functionId": "c8a64004811b5ab7fef06e17b78d81bb062bdb6d8e",
-          "handler": "services/transactionBanking/statements/checkSubscriptionStatus.handler",
+          "name": "services/transactionBanking/statements/checkSubscriptionStatus.handler",
           "startTime": "2025-01-08T02:20:50.167Z",
           "endTime": "2025-01-08T02:20:58.197Z",
           "duration": 8030,
@@ -1665,7 +1665,7 @@
         },
         {
           "functionId": "c8ecc52797e167dae2b11b974fff548b2451e74197",
-          "handler": "services/transactionBanking/statements/initScheduledStatements.handler",
+          "name": "services/transactionBanking/statements/initScheduledStatements.handler",
           "startTime": "2025-01-08T02:20:54.048Z",
           "endTime": "2025-01-08T02:21:02.430Z",
           "duration": 8382,
@@ -1683,7 +1683,7 @@
         },
         {
           "functionId": "c80c46f7f4ec2f0bf748e00f013102c377cca4ee70",
-          "handler": "services/transactionBanking/statements/invokeGenerateStatement.handler",
+          "name": "services/transactionBanking/statements/invokeGenerateStatement.handler",
           "startTime": "2025-01-08T02:20:55.255Z",
           "endTime": "2025-01-08T02:21:02.430Z",
           "duration": 7175,
@@ -1701,7 +1701,7 @@
         },
         {
           "functionId": "c8dda5428d5bd9dbe6b1ce12e78d863d09f6ba2c2d",
-          "handler": "services/transactionBanking/services/closeSubscriptionHandler.handler",
+          "name": "services/transactionBanking/services/closeSubscriptionHandler.handler",
           "startTime": "2025-01-08T02:20:55.262Z",
           "endTime": "2025-01-08T02:21:04.917Z",
           "duration": 9655,
@@ -1719,7 +1719,7 @@
         },
         {
           "functionId": "c882724ab27cbcce77f66944d71a6b46db4df9d55d",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/ProductV2Handler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/ProductV2Handler_gen.handler",
           "startTime": "2025-01-08T02:20:56.469Z",
           "endTime": "2025-01-08T02:21:06.117Z",
           "duration": 9648,
@@ -1737,7 +1737,7 @@
         },
         {
           "functionId": "c86140831995b9c0e1fd07e17239e27dbb54377604",
-          "handler": "services/transactionBanking/nonApiHandlers/accountClosureDriver.handler",
+          "name": "services/transactionBanking/nonApiHandlers/accountClosureDriver.handler",
           "startTime": "2025-01-08T02:21:00.274Z",
           "endTime": "2025-01-08T02:21:08.983Z",
           "duration": 8709,
@@ -1755,7 +1755,7 @@
         },
         {
           "functionId": "c8e64038a674802b2e4493015925a804f6972612f6",
-          "handler": "services/transactionBanking/listeners/closureStatement.handler",
+          "name": "services/transactionBanking/listeners/closureStatement.handler",
           "startTime": "2025-01-08T02:20:58.899Z",
           "endTime": "2025-01-08T02:21:08.983Z",
           "duration": 10084,
@@ -1773,7 +1773,7 @@
         },
         {
           "functionId": "c8fd6f3d0f1247b1c3f49d66ea5196cd5852011ad9",
-          "handler": "services/transactionBanking/listeners/entityConfig.handler",
+          "name": "services/transactionBanking/listeners/entityConfig.handler",
           "startTime": "2025-01-08T02:21:00.337Z",
           "endTime": "2025-01-08T02:21:08.983Z",
           "duration": 8646,
@@ -1791,7 +1791,7 @@
         },
         {
           "functionId": "c85bb48ae7ac16e23a4af03d9135ffaf6a55a236aa",
-          "handler": "services/transactionBanking/listeners/closureStatement.handler",
+          "name": "services/transactionBanking/listeners/closureStatement.handler",
           "startTime": "2025-01-08T02:21:00.273Z",
           "endTime": "2025-01-08T02:21:08.983Z",
           "duration": 8710,
@@ -1809,7 +1809,7 @@
         },
         {
           "functionId": "c81304bbfe60dc4c2d49695d651f030c9eddca4bcb",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/ProductHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/ProductHandler_gen.handler",
           "startTime": "2025-01-08T02:20:56.428Z",
           "endTime": "2025-01-08T02:21:13.481Z",
           "duration": 17053,
@@ -1827,7 +1827,7 @@
         },
         {
           "functionId": "c8ad88ca9690a69bc07e67807e4b61a7b7d524b8b3",
-          "handler": "services/transactionBanking/controllers/bankFeeds/refreshXeroToken.handler",
+          "name": "services/transactionBanking/controllers/bankFeeds/refreshXeroToken.handler",
           "startTime": "2025-01-08T02:21:06.877Z",
           "endTime": "2025-01-08T02:21:16.768Z",
           "duration": 9891,
@@ -1845,7 +1845,7 @@
         },
         {
           "functionId": "c8dbc36606875a58b539ee53be4da9c78182590d0e",
-          "handler": "services/transactionBanking/Stripe/src/event/PaymentReminder.handler",
+          "name": "services/transactionBanking/Stripe/src/event/PaymentReminder.handler",
           "startTime": "2025-01-08T02:21:06.121Z",
           "endTime": "2025-01-08T02:21:18.896Z",
           "duration": 12775,
@@ -1863,7 +1863,7 @@
         },
         {
           "functionId": "c8536c03c3b6a80bd31d0d8e44dfb8063cd2499b4c",
-          "handler": "services/transactionBanking/statements/failedAccountingTxns.handler",
+          "name": "services/transactionBanking/statements/failedAccountingTxns.handler",
           "startTime": "2025-01-08T02:21:09.987Z",
           "endTime": "2025-01-08T02:21:18.897Z",
           "duration": 8910,
@@ -1881,7 +1881,7 @@
         },
         {
           "functionId": "c88aa8d5b002e10eb57d9a92d76725e23a5c2c54a6",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/StripeHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/StripeHandler_gen.handler",
           "startTime": "2025-01-08T02:21:02.900Z",
           "endTime": "2025-01-08T02:21:18.897Z",
           "duration": 15997,
@@ -1899,7 +1899,7 @@
         },
         {
           "functionId": "c87e9b82590fca6f037f10b4fd9da1148b6402f148",
-          "handler": "services/transactionBanking/statements/bankFeedStatementSlackAlerter.handler",
+          "name": "services/transactionBanking/statements/bankFeedStatementSlackAlerter.handler",
           "startTime": "2025-01-08T02:21:09.992Z",
           "endTime": "2025-01-08T02:21:18.912Z",
           "duration": 8920,
@@ -1917,7 +1917,7 @@
         },
         {
           "functionId": "c8be40f6c2ae42b2488d3649dd645da0efcf909739",
-          "handler": "services/transactionBanking/Stripe/src/listeners/InvoiceProcessingListener.handler",
+          "name": "services/transactionBanking/Stripe/src/listeners/InvoiceProcessingListener.handler",
           "startTime": "2025-01-08T02:21:02.833Z",
           "endTime": "2025-01-08T02:21:19.048Z",
           "duration": 16215,
@@ -1935,7 +1935,7 @@
         },
         {
           "functionId": "c83f75e0f78d524c4256f8c573987ebb5975508f9e",
-          "handler": "services/transactionBanking/statements/bankFeedStatementEventPublisher.handler",
+          "name": "services/transactionBanking/statements/bankFeedStatementEventPublisher.handler",
           "startTime": "2025-01-08T02:21:09.992Z",
           "endTime": "2025-01-08T02:21:19.048Z",
           "duration": 9056,
@@ -1953,7 +1953,7 @@
         },
         {
           "functionId": "c86055cfa24c95c9cc4746c3485a3970e02b3c7ed8",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/bankFeedsHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/bankFeedsHandler_gen.handler",
           "startTime": "2025-01-08T02:21:09.987Z",
           "endTime": "2025-01-08T02:21:19.048Z",
           "duration": 9061,
@@ -1971,7 +1971,7 @@
         },
         {
           "functionId": "c83587eeac26d162453127b51dbd7ee82970b46ffe",
-          "handler": "services/transactionBanking/statements/initBankFeedStatements.sqsHandler",
+          "name": "services/transactionBanking/statements/initBankFeedStatements.sqsHandler",
           "startTime": "2025-01-08T02:21:16.963Z",
           "endTime": "2025-01-08T02:21:24.091Z",
           "duration": 7128,
@@ -1989,7 +1989,7 @@
         },
         {
           "functionId": "c8c2da26ae99ce4f1270518698d50f34d234ad2e85",
-          "handler": "services/transactionBanking/statements/initBankFeedStatementsManual.handler",
+          "name": "services/transactionBanking/statements/initBankFeedStatementsManual.handler",
           "startTime": "2025-01-08T02:21:16.766Z",
           "endTime": "2025-01-08T02:21:24.091Z",
           "duration": 7325,
@@ -2007,7 +2007,7 @@
         },
         {
           "functionId": "c8beeaa5b16e5b1f0c18d241bf1044fe5a231b8735",
-          "handler": "services/transactionBanking/statements/bankFeedStatementForwarder.handler",
+          "name": "services/transactionBanking/statements/bankFeedStatementForwarder.handler",
           "startTime": "2025-01-08T02:21:19.501Z",
           "endTime": "2025-01-08T02:21:24.091Z",
           "duration": 4590,
@@ -2025,7 +2025,7 @@
         },
         {
           "functionId": "c8cdbce8a8d8f74d92accdc7f091fabdc366522207",
-          "handler": "services/transactionBanking/autoGeneratedHandlers/TermDepositHandler_gen.handler",
+          "name": "services/transactionBanking/autoGeneratedHandlers/TermDepositHandler_gen.handler",
           "startTime": "2025-01-08T02:21:19.704Z",
           "endTime": "2025-01-08T02:21:25.503Z",
           "duration": 5799,
@@ -2043,7 +2043,7 @@
         },
         {
           "functionId": "c8835442e244a133ae3b4874a51dc927bece6bc6ca",
-          "handler": "services/opsConsole/stack/customResources/populateCounters/lambda.handler",
+          "name": "services/opsConsole/stack/customResources/populateCounters/lambda.handler",
           "startTime": "2025-01-08T02:21:20.720Z",
           "endTime": "2025-01-08T02:21:26.591Z",
           "duration": 5871,
@@ -2061,7 +2061,7 @@
         },
         {
           "functionId": "c849b2afd870a261f0c4254f1ca0b8df006ad279c5",
-          "handler": "services/test/controllers/Fixture/fixtureHandler_gen.handler",
+          "name": "services/test/controllers/Fixture/fixtureHandler_gen.handler",
           "startTime": "2025-01-08T02:21:22.095Z",
           "endTime": "2025-01-08T02:21:30.557Z",
           "duration": 8462,
@@ -2088,9 +2088,9 @@
       "stackDeploys": [
         {
           "name": "jez02-bosphorus-BaseInfra",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:21:33.013Z",
           "endTime": "2025-01-08T02:24:16.074Z",
-          "duration": 163473,
+          "duration": 163061,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2109,9 +2109,9 @@
         },
         {
           "name": "jez02-bosphorus-Logs",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:21:33.017Z",
           "endTime": "2025-01-08T02:22:14.166Z",
-          "duration": 41565,
+          "duration": 41149,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2130,9 +2130,9 @@
         },
         {
           "name": "jez02-bosphorus-OnboardingAndIdentityMonitoring",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:21:33.027Z",
           "endTime": "2025-01-08T02:22:03.402Z",
-          "duration": 30801,
+          "duration": 30375,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2151,9 +2151,9 @@
         },
         {
           "name": "jez02-bosphorus-Persistence",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:21:33.046Z",
           "endTime": "2025-01-08T02:22:45.148Z",
-          "duration": 72547,
+          "duration": 72102,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2172,9 +2172,9 @@
         },
         {
           "name": "jez02-bosphorus-TransactionBanking",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:21:33.045Z",
           "endTime": "2025-01-08T02:22:02.869Z",
-          "duration": 30268,
+          "duration": 29824,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2193,9 +2193,9 @@
         },
         {
           "name": "jez02-bosphorus-TxbMonitoring",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:21:33.065Z",
           "endTime": "2025-01-08T02:22:03.616Z",
-          "duration": 31015,
+          "duration": 30551,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2214,9 +2214,9 @@
         },
         {
           "name": "jez02-bosphorus-Auth",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:24:16.104Z",
           "endTime": "2025-01-08T02:25:45.900Z",
-          "duration": 253299,
+          "duration": 89796,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2235,9 +2235,9 @@
         },
         {
           "name": "jez02-bosphorus-OpsConsolePersistence",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:24:16.103Z",
           "endTime": "2025-01-08T02:25:47.170Z",
-          "duration": 254569,
+          "duration": 91067,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2256,9 +2256,9 @@
         },
         {
           "name": "jez02-bosphorus-BaseLambda",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:25:45.929Z",
           "endTime": "2025-01-08T02:30:41.164Z",
-          "duration": 548563,
+          "duration": 295235,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2277,9 +2277,9 @@
         },
         {
           "name": "jez02-bosphorus-DevStack",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:30:41.197Z",
           "endTime": "2025-01-08T02:32:20.293Z",
-          "duration": 647692,
+          "duration": 99096,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2298,9 +2298,9 @@
         },
         {
           "name": "jez02-bosphorus-OnboardingAndIdentity",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:30:41.199Z",
           "endTime": "2025-01-08T02:32:44.049Z",
-          "duration": 671448,
+          "duration": 122850,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2319,9 +2319,9 @@
         },
         {
           "name": "jez02-bosphorus-OnboardingAndIdentityEvents",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:30:41.206Z",
           "endTime": "2025-01-08T02:33:11.937Z",
-          "duration": 699336,
+          "duration": 150731,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2340,9 +2340,9 @@
         },
         {
           "name": "jez02-bosphorus-OnboardingAndIdentityKYX",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:30:41.235Z",
           "endTime": "2025-01-08T02:32:17.475Z",
-          "duration": 644874,
+          "duration": 96240,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2361,9 +2361,9 @@
         },
         {
           "name": "jez02-bosphorus-TxbAccounts",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:30:41.253Z",
           "endTime": "2025-01-08T02:33:13.249Z",
-          "duration": 700648,
+          "duration": 151996,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2382,9 +2382,9 @@
         },
         {
           "name": "jez02-bosphorus-TxbBusinessBanking",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:30:41.262Z",
           "endTime": "2025-01-08T02:32:47.643Z",
-          "duration": 675042,
+          "duration": 126381,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2403,9 +2403,9 @@
         },
         {
           "name": "jez02-bosphorus-TxbPayments",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:30:41.268Z",
           "endTime": "2025-01-08T02:33:21.655Z",
-          "duration": 709054,
+          "duration": 160387,
           "status": "CREATE_COMPLETE",
           "stages": [
             {
@@ -2424,9 +2424,9 @@
         },
         {
           "name": "jez02-bosphorus-TxbTermDeposit",
-          "startTime": "2025-01-08T02:21:32.601Z",
+          "startTime": "2025-01-08T02:30:41.286Z",
           "endTime": "2025-01-08T02:31:48.358Z",
-          "duration": 615757,
+          "duration": 67072,
           "status": "CREATE_COMPLETE",
           "stages": [
             {

@@ -1,29 +1,28 @@
 import fs from 'node:fs';
 import {SSTLogAnalyzer, SynthBlock, PublishBlock} from './sstLogAnalyzer';
-import { generateGanttChart } from './textGantt';
-
+import { generateGanttChartTextBased } from './ganttCharts';
 
 const logFilName = '20250108_133321_run_deploy_jez02-reduced'
 // const logFilName = '20250108_142943_run_dev_jez04-reduced'
 
-// Read logs & parse analytics
+// Read logs, parse analytics, save to file
 const logContent = await fs.promises.readFile(`./test/logs/${logFilName}.log`, 'utf8');
 const synthBlocks = SSTLogAnalyzer.extractSynthesizeBlocks(logContent);
 const publishBlocks = SSTLogAnalyzer.extractPublishBlocks(logContent);
 const results = {synthBlocks, publishBlocks};
-// fs.promises.writeFile(`./test/analytics/${logFilName}.json`, JSON.stringify(results, null, 2));
+console.log({results})
+await fs.promises.writeFile(`./test/analytics/${logFilName}.json`, JSON.stringify(results, null, 2));
 
 
-
-// Read analytics and write Gantt chart
-// const analytics = JSON.parse(await fs.promises.readFile(`./test/analytics/${logFilName}.json`, 'utf8')) as Awaited<ReturnType<typeof analyzeLogFile>>;
-const analytics = results
-// console.log({ analytics })
+// Read analytics file and create Gantt chart
+const analytics = JSON.parse(
+    await fs.promises.readFile(`./test/analytics/${logFilName}.json`, 'utf8'),
+    (key, value) => (key === 'startTime' || key === 'endTime') && typeof value === 'string' ? new Date(value) : value
+) as typeof results;
+console.log({ analytics })
 if (analytics) {
-    const stackDeploys = analytics?.publishBlocks[0].stackDeploys
-    // console.log({ stackDeploys })
-    const chart = generateGanttChart(stackDeploys);
+    // const data = analytics?.synthBlocks[0].functionBuilds
+    const data = analytics?.publishBlocks[0].stackDeploys
+    const chart = generateGanttChartTextBased(data);
     console.log(chart);
-    // await fs.promises.writeFile(chartFileName, chart);
-    // await run(chart, `${logFilName}.png`);
 }
