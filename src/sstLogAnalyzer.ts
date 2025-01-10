@@ -171,7 +171,7 @@ export class SSTLogAnalyzer {
                 stackNames.forEach(name => {
                     inProgressStacks.set(name, {
                         name,
-                        startTime: timestamp,
+                        startTime: new Date(0), // Initialize with a placeholder value
                         endTime: new Date(0),
                         duration: 0,
                         status: 'CREATE_COMPLETE',
@@ -187,8 +187,13 @@ export class SSTLogAnalyzer {
                 if (stackMatch?.groups) {
                     const { stackName, status } = stackMatch.groups;
                     const stack = inProgressStacks.get(stackName);
-                    
+
                     if (stack) {
+                        // Set the startTime if it's the first status update for this stack
+                        if (stack.startTime.getTime() === 0) {
+                            stack.startTime = timestamp;
+                        }
+
                         stack.stages.push({ status: status as any, timestamp });
 
                         // Track completion
@@ -211,7 +216,7 @@ export class SSTLogAnalyzer {
                                 inProgressStacks.clear();
                             }
                         } else {
-                            console.log('Unhandled stack status:', status);
+                            // console.log('Unhandled stack status:', status);
                         }
                     }
                 }
@@ -230,7 +235,7 @@ export class SSTLogAnalyzer {
         try {
             const match = line.match(this.EVENT_PATTERN);
             if (!match?.groups?.event) return null;
-            
+
             const event = JSON.parse(match.groups.event) as BuildEvent;
             if (event.type === 'function.build.started' || event.type === 'function.build.success') {
                 return event;

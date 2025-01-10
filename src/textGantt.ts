@@ -1,17 +1,15 @@
 interface objectType {
     name: string;
-    startTime: string;
-    endTime: string;
-    duration: number;
-    status: string;
-    stages: {
-        status: string;
-        timestamp: string;
-    }[];
+    startTime: Date;
+    endTime: Date;
 }
 
 export function generateGanttChart(tasks: objectType[]): string {
-    const taskNamePadding = 50;
+    const taskNameWidth = 50;
+    const timeTickWidth = 10; // HH:mm:ss format
+    const timeTickCount = 15; // 15 time stamps on x axis
+    const rowChartWidth = (timeTickCount+1) * timeTickWidth
+    const totalColumns = 15;
     if (tasks.length === 0) return "No tasks provided.";
 
     // Step 1: Convert startTime and endTime to Date objects
@@ -27,7 +25,8 @@ export function generateGanttChart(tasks: objectType[]): string {
     const timeRange = maxTime - minTime;
 
     // Step 3: Calculate tick spacing (at least 20 ticks)
-    const tickCount = Math.max(20, tasks.length * 2);
+    // const tickCount = Math.max(20, tasks.length * 2);
+    const tickCount = totalColumns
     const tickInterval = timeRange / tickCount;
     const tickDates = Array.from({ length: tickCount + 1 }, (_, i) =>
         new Date(minTime + tickInterval * i)
@@ -36,22 +35,29 @@ export function generateGanttChart(tasks: objectType[]): string {
     // Step 4: Format timeline dates as HH:mm:ss
     const timeline = tickDates
         .map(date => date.toISOString().slice(11, 19)) // HH:mm:ss format
-        .map(date => date.padEnd(9))
+        .map(date => date.padEnd(timeTickWidth))
         .join("");
 
     // Step 5: Create the Gantt chart rows for each task
     const chartRows = taskTimes.map(task => {
-        const row = new Array(tickCount + 1).fill(" ");
-        const taskStartIndex = Math.floor((task.startTime.getTime() - minTime) / tickInterval);
-        const taskEndIndex = Math.ceil((task.endTime.getTime() - minTime) / tickInterval);
-
-        for (let i = taskStartIndex; i <= taskEndIndex; i++) {
-            row[i] = "█";
-        }
-
-        return `${task.name.padEnd(taskNamePadding)} | ${row.join("")}`;
+        const taskStartIndex = Math.floor((task.startTime.getTime() - minTime) / (tickInterval/timeTickWidth));
+        const taskEndIndex = Math.ceil((task.endTime.getTime() - minTime) / (tickInterval/timeTickWidth));
+        
+        const row = "·".repeat(taskStartIndex) + "█".repeat(taskEndIndex - taskStartIndex) + "·".repeat(rowChartWidth - taskEndIndex);
+        return `${task.name.padEnd(taskNameWidth)} | ${row}`;
     });
 
     // Step 6: Assemble the final chart
-    return `${"Task".padEnd(taskNamePadding)} | ${timeline}\n${"-".repeat(40 + timeline.length + 3)}\n${chartRows.join("\n")}`;
+    return `${"Task".padEnd(taskNameWidth)} | ${timeline}\n${"-".repeat(taskNameWidth + rowChartWidth + 3)}\n${chartRows.join("\n")}`;
+}
+
+// Test functionality
+if (new URL(import.meta.url).pathname === process.argv[1]) {
+    const tasks = [
+        { name: "Task A", startTime: new Date("2025-01-01T09:00:00"), endTime: new Date("2025-01-01T09:15:00") },
+        { name: "Task B", startTime: new Date("2025-01-01T09:10:00"), endTime: new Date("2025-01-01T09:30:00") },
+        { name: "Task D", startTime: new Date("2025-01-01T09:00:00"), endTime: new Date("2025-01-01T09:45:00") },
+        { name: "Task C", startTime: new Date("2025-01-01T09:20:00"), endTime: new Date("2025-01-01T09:45:00") }
+    ];
+    console.log(generateGanttChart(tasks));
 }
