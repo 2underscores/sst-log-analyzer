@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "tsx src/index.ts",
     "watch": "tsx --watch src/index.ts",
-    "run": "tsx src/index.ts"
+    "test:gantt": "tsx src/ganttCharts.ts"
   },
   "repository": {
     "type": "git",

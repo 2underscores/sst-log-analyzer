@@ -6,9 +6,11 @@ interface ObjectType {
 
 export function generateGanttChartTextBased(tasks: ObjectType[]): string {
     tasks.sort((a, b) => a.startTime.getTime() - b.startTime.getTime());
+    const maxNameWidth = 70;
+    tasks.forEach(task => {task.name = task.name.length > maxNameWidth ? task.name.slice(0,maxNameWidth-2)+'...' : task.name}); // Trim names that are too long
     const taskNameWidth = Math.max(...tasks.map(task => task.name.length));
     const timeTickWidth = 10; // HH:mm:ss format
-    const timeTickCount = 15; // 15 time stamps on x axis
+    const timeTickCount = 10; // 15 time stamps on x axis
     const rowChartWidth = (timeTickCount+1) * timeTickWidth
     if (tasks.length === 0) return "No tasks provided.";
 
@@ -35,7 +37,7 @@ export function generateGanttChartTextBased(tasks: ObjectType[]): string {
 
     // Assemble the final chart
     return [ 
-        `${"Task".padEnd(taskNameWidth)} | ${timeline}`,    // Header row
+        `${"Stack".padEnd(taskNameWidth)} | ${timeline}`,    // Header row
         `${"-".repeat(taskNameWidth + rowChartWidth + 3)}`, // separator
         `${chartRows.join("\n")}`].join("\n");              // Body of chart
 }

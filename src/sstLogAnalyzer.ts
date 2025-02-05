@@ -37,11 +37,14 @@ interface ResourceDeploy extends GenericStage {
     stackName: string;
 }
 
-const EVENT_TYPES = ['function.build.started', 'function.build.success', 'stack.status', 'stack.updated', 'stack.resources', 'stack.event'] as const
-const EVENT_TYPES_FN_BUILD = ['function.build.started', 'function.build.success'] as const;
+const eventTypes = ['function.build.started', 'function.build.success', 'stack.status', 'stack.updated', 'stack.resources', 'stack.event', 'file.changed', 'cli.dev', 'stacks.metadata.updated'] as const
+const stackStatuses = ['PUBLISH_ASSETS_IN_PROGRESS', 'CREATE_IN_PROGRESS', 'UPDATE_IN_PROGRESS', 'SKIPPED', 'CREATE_COMPLETE', 'UPDATE_COMPLETE', 'ROLLBACK_IN_PROGRESS'] as const
+type EventTypes = typeof eventTypes[number];
+type StackStatuses = typeof stackStatuses[number];
+// const EVENT_TYPES_FN_BUILD = ['function.build.started', 'function.build.success'] as const;
 
 interface LogPublishEvent {
-    type: typeof EVENT_TYPES[number];
+    type: EventTypes;
     properties: any;
     sourceID: string;
 }
@@ -61,7 +64,7 @@ interface StackStatusEvent extends LogPublishEvent {
     type: 'stack.status';
     properties: {
         stackID: string;
-        status: string;
+        status: StackStatuses;
     };
 }
 interface StackEventEvent extends LogPublishEvent {
@@ -71,7 +74,7 @@ interface StackEventEvent extends LogPublishEvent {
             LogicalResourceId: string;
             StackName: string, // "jez02-bosphorus-OpsConsolePersistence",
             ResourceType: string, //"AWS::IAM::Role",
-            ResourceStatus: "CREATE_COMPLETE" | "CREATE_IN_PROGRESS",
+            ResourceStatus: StackStatuses,
         },
         stackID: string; // "jez02-bosphorus-OpsConsolePersistence"
     };
@@ -195,6 +198,7 @@ export class SSTLogAnalyzer {
             // Check for new deploy block
             const deployMatch = line.match(this.DEPLOY_STACKS_PATTERN);
             if (deployMatch?.groups?.stacks) {
+                console.log('New deploy block:', deployMatch.groups.stacks);
                 currentPublish = { ...this.newPublishTemplate(), startTime: timestamp, };
                 const stackNames = deployMatch.groups.stacks.split(',').map(s => s.trim().replace(/"/g, ''));
                 stackNames.forEach(name => {
@@ -219,7 +223,9 @@ export class SSTLogAnalyzer {
                     stack.startTime = timestamp;
                 }
                 // Track completion
-                if (['SKIPPED', 'CREATE_COMPLETE', 'UPDATE_COMPLETE'].includes(status)) {
+                // console.log('Stack status:', stackID, status);
+                const completionStatuses: StackStatuses[] = ['SKIPPED', 'CREATE_COMPLETE', 'UPDATE_COMPLETE', 'ROLLBACK_IN_PROGRESS']
+                if (completionStatuses.includes(status)) {
                     stack.endTime = timestamp;
                     stack.duration = stack.endTime.getTime() - stack.startTime.getTime();
                     stack.status = status as any;
@@ -238,7 +244,7 @@ export class SSTLogAnalyzer {
                         inProgressStacks.clear();
                     }
                 } else {
-                    // console.log('Unhandled stack status:', status);
+                    console.log('Unhandled stack status:', status);
                 }
             }
         }
@@ -256,11 +262,16 @@ export class SSTLogAnalyzer {
             if (!timestamp) continue;
             const event = this.extractEventPublished(line);
             if (!event || !this.isStackEvent(event)) continue;
-
             const resourceId = event.properties.event.LogicalResourceId;
+            if (resourceId && event.properties.event.LogicalResourceId === 'blocklistEventsQueuePolicyB8DFB26B') {
+                console.log('fuck');
+                console.log(event.properties.event.ResourceStatus);
+            }
             const status = event.properties.event.ResourceStatus;
             const resource = inProgressResources.get(resourceId);
-            if (!resource && status === 'CREATE_IN_PROGRESS') {
+            // Complete resource if this is completion message
+            if (!resource && (status === 'CREATE_IN_PROGRESS' || status === 'UPDATE_IN_PROGRESS')) {
+                // console.log(`${status} for resource ${resourceId}`);
                 inProgressResources.set(resourceId, {
                     ...this.newGenericTimeblockTemplate,
                     name: resourceId,
@@ -268,17 +279,16 @@ export class SSTLogAnalyzer {
                     resourceType: event.properties.event.ResourceType,
                     stackName: event.properties.event.StackName,
                 });
-            } else if (resource && status === 'CREATE_IN_PROGRESS') {
-                // console.log('Resource already in progress:', resourceId);
-                () => { };
-            } else if (resource && status === 'CREATE_COMPLETE') {
+            // If completion log, complete resource
+            } else if (resource && (status === 'CREATE_COMPLETE' || status === 'UPDATE_COMPLETE')) {
                 resource.endTime = timestamp;
                 resource.duration = resource.endTime.getTime() - resource.startTime.getTime();
                 resources.push(resource);
-            } else if (!resource && status === 'CREATE_COMPLETE') {
+            // Completion log, but no pre-existing resource (shouldn't happen)
+            } else if (!resource && (status === 'CREATE_COMPLETE' || status === 'UPDATE_COMPLETE')) {
                 if (event.properties.event.ResourceType !== 'AWS::CloudFormation::Stack') {
-                    console.log({ resource, status, event, line });
-                    throw new Error('Unhandled resource status');
+                    console.error({ message: 'Unhandled resource status. Finish found without a start.', resource, status, event, line });
+                    // throw new Error('Unhandled resource status'); // This seems to be somewhat common???
                 }
             }
         }
@@ -298,9 +308,17 @@ export class SSTLogAnalyzer {
         if (match && !eventStr) { throw new Error('Regex event match but unable get event string: ' + line); }
         const event = JSON.parse(eventStr);
         // Throw if it doesn't fit expected structure
-        if (EVENT_TYPES.includes(event.type) && event.properties && event.sourceID) {
+        if (eventTypes.includes(event.type) && event.properties && event.sourceID) {
             return event;
         } else {
+            if (event.type === 'stacks.metadata.updated') {
+                return null; // Ignore event, has no props
+            }
+            const devModeEvents = ['function.invoked', 'function.ack', 'function.success', 'local.patches', 'worker.started', 'worker.stdout']
+            if (devModeEvents.includes(event.type)) {
+                return null; // Ignore event, dev mode specific
+            }
+
             throw new Error('Event does not match expected structure: ' + line);
         }
     }

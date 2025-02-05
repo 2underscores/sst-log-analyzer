@@ -23,6 +23,7 @@ dist/
 # Logs
 logs/
 *.log
+test/analytics/*
 
 # Build files
 build/
