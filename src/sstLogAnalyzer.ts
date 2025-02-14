@@ -236,7 +236,7 @@ export function extractPublishBlocks(logContent: string): PublishBlock[] {
         // If this is start of new deploy block, start tracking it
         const deployMatch = line.match(regexes.deployStacksPattern);
         if (deployMatch?.groups?.stacks) {
-            console.log('New deploy block:', deployMatch.groups.stacks);
+            // console.debug('New deploy block:', deployMatch.groups.stacks);
             const stackNames = deployMatch.groups.stacks.split(',').map(s => s.trim().replace(/"/g, ''));
             currentPublish = {
                 startTime: timestamp,
@@ -287,8 +287,8 @@ export function extractPublishBlocks(logContent: string): PublishBlock[] {
                     currentPublish = undefined;
                     inProgressStacks.clear();
                 }
-            } else {
-                console.log('Unhandled stack status:', status);
+            } else if (!stackStatuses.includes(status)) {
+                throw new Error('Unhandled stack status: ' + status);
             }
         }
     }
