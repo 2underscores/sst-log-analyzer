@@ -1,0 +1,32 @@
+Interesting saved example logs
+- `20250110_193931_run_build_jez06_concurrency_1`
+- `20250110_180503_run_build_jez06_concurrency_2`
+- `20250110_195007_run_build_jez06_concurrency_9_hot`
+- `20250111_092540_run_build_jez06`
+- `20250108_133321_run_deploy_jez02-reduced`
+- `20250108_133321_run_deploy_jez02`
+- `20250114_120520_run_deploy_jez08`
+- `20250108_142943_run_dev_jez04-reduced`
+- `20250114_114539_run_dev_jez07`
+- `1736908581-runner-zte-mnql-project-38246986-concurrent-0-sst-debug`
+- `1737017532-runner-zte-mnql-project-38246986-concurrent-0-sst-debug`
+- `1737511161-runner-zte-mnql-project-38246986-concurrent-0-sst-debug` // This
+- `1737672488-runner-zte-mnql-project-38246986-concurrent-0-sst-debug`
+- `1737327387-Jeremys-MacBook-Pro.local-sst-debug`
+- `local-cdn-split-debug`
+- `1738030515-runner-zte-mnql-project-38246986-concurrent-0-sst-debug` // CDN split out
+- `debug-log-auth-need-baseinfra`
+- `2025-01-31_08-40-24_debug`
+- `2025-01-31_12-21-53_debug` // 18m This one is BEFORE PLAT-998 PR. jez25
+- `2025-02-03_10-39-03_debug` // 22m This one is BEFORE PLAT-998 PR. jez28
+- `2025-02-05_18-23-27_debug` // This one is with BOTH old and new jez40. DEV run not deploy
+- `2025-01-31_11-15-51_debug` // This one is after PLAT-998 PR. New stacks: Certs, Cdns, B2cGateway
+- `2025-02-04_10-27-44_debug` // This one is with BOTH old and new jez35
+- `2025-02-05_19-15-08_debug` // jez40 transition legacy to new. DANGER - long running BaseLambda (CDN update)
+- `2025-02-05_20-42-16_debug` // jez44 18m new deploy of legacy on & used
+- `2025-02-05_22-00-51_debug` // jez44 depllegacy off (infra teardown)
+- `2025-02-06_20-20-37_debug` // jez55 - deploy all, legacy 20m, routes split off
+- `2025-02-07_09-51-25_debug` // jez57 dev deploy - 15m, long CDN. deploy all, legacy 20m, routes split off
+- `2025-02-07_10-38-42_debug` // jez58 - last master deploy, 24m deploy, holy fuck. Long ass CDN.
+- `2025-02-11_21-28-36_noBaseL_jez83_7m`
+- `2025-02-11_21-58-59_noBaseL_jez85_6m`
