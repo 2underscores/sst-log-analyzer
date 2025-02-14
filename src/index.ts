@@ -12,7 +12,7 @@ import {basename, extname} from 'path';
 // const localFilName = '20250111_092540_run_build_jez06'
 // const localFilName = '20250108_133321_run_deploy_jez02-reduced'
 // const localFilName = '20250108_133321_run_deploy_jez02'
-// const localFilName = '20250114_120520_run_deploy_jez08'
+const localFilName = '20250114_120520_run_deploy_jez08'
 // const localFilName = '20250108_142943_run_dev_jez04-reduced'
 // const localFilName = '20250114_114539_run_dev_jez07'
 // const localFilName = '1736908581-runner-zte-mnql-project-38246986-concurrent-0-sst-debug'
@@ -35,7 +35,7 @@ import {basename, extname} from 'path';
 // const localFilName = '2025-02-06_20-20-37_debug' // jez55 - deploy all, legacy 20m, routes split off
 // const localFilName = '2025-02-07_09-51-25_debug' // jez57 dev deploy - 15m, long CDN. deploy all, legacy 20m, routes split off
 // const localFilName = '2025-02-07_10-38-42_debug' // jez58 - last master deploy, 24m deploy, holy fuck. Long ass CDN.
-const localFilName = '2025-02-11_21-28-36_noBaseL_jez83_7m'
+// const localFilName = '2025-02-11_21-28-36_noBaseL_jez83_7m'
 // const localFilName = '2025-02-11_21-58-59_noBaseL_jez85_6m'
 
 
@@ -77,7 +77,7 @@ for (const stackName of stackNames) {
   // console.log(resourceDeployChart);
 }
 const fnBuildChart = generateGanttChartTextBased(analytics?.synthBlocks[0].functionBuilds);
-// console.log(fnBuildChart);
+console.log(fnBuildChart);
 const stackDeployChart = generateGanttChartTextBased(analytics?.publishBlocks[0].stackDeploys);
 console.log(stackDeployChart);
 console.log({inputFilePath, inputFileName})
