@@ -1,28 +1,44 @@
 import fs from 'node:fs';
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeAll } from 'vitest';
 import { extractSynthesizeBlocks, extractPublishBlocks, extractResourceBlocks } from '@logparser/sstLogAnalyzer';
 import { generateGanttChartTextBased } from '@logparser/ganttCharts';
-import { basename, extname } from 'path';
 
+describe('SST deploy', () => {
+    let logContent: string;
+    const filePath = './test/files';
+    const inputFileName = 'example';
+  
+    beforeAll(async () => {
+      logContent = await fs.promises.readFile(`${filePath}/${inputFileName}.log`, 'utf8');
+    });
 
-describe('Log Parser', () => {
-    it('should parse a valid log file', async () => {
-        const inputFileName = '20250114_120520_run_deploy_jez08'
-        const inputFilePath = `./examples/logs/${inputFileName}.log`;
-        // Read logs, parse analytics, save to file
-        const logContent = await fs.promises.readFile(inputFilePath, 'utf8');
+    it('Lambda esbuild', async () => {
         const synthBlocks = extractSynthesizeBlocks(logContent);
-        const publishBlocks = extractPublishBlocks(logContent);
+        const chartLambda = generateGanttChartTextBased(synthBlocks[0].functionBuilds);
+        const filename = `${inputFileName}-lambda.txt`
+        // // Uncomment to rewrite comparison data
+        // await fs.promises.writeFile(`${filePath}/${filename}`, chartLambda);
+        const chartExpected = await fs.promises.readFile(`${filePath}/${filename}`, 'utf8');
+        expect(chartLambda).toEqual(chartExpected);
+    })
+
+    it('Stack resource deploys', async () => {
         const resourcePublishes = extractResourceBlocks(logContent);
-        const results = { synthBlocks, publishBlocks, resourcePublishes };
-        const fnBuildChart = generateGanttChartTextBased(results.synthBlocks[0].functionBuilds);
-        console.log(fnBuildChart);
-        const stackNames = results.publishBlocks.flatMap(r => r.stackDeploys.map(s => s.name));
-        const data = results.resourcePublishes.filter((r) => r.stackName.includes(stackNames[0]));
-        const resourceDeployChart = generateGanttChartTextBased(data.filter(r => !r.name.includes('SourcemapUploader')));
-        console.log(resourceDeployChart);
-        const stackDeployChart = generateGanttChartTextBased(results.publishBlocks[0].stackDeploys);
-        console.log(stackDeployChart);
-        console.log(publishBlocks)
+        const chartStack = generateGanttChartTextBased(resourcePublishes.filter((r) => r.stackName.includes('jez08-bosphorus-BaseLambda')));
+        const filename = `${inputFileName}-stack.txt`
+        // // Uncomment to rewrite comparison data
+        // await fs.promises.writeFile(`${filePath}/${filename}`, chartStack);
+        const chartExpected = await fs.promises.readFile(`${filePath}/${filename}`, 'utf8');
+        expect(chartStack).toEqual(chartExpected);
+    })
+
+    it('Overall app', async () => {
+        const publishBlocks = extractPublishBlocks(logContent);
+        const chartApp = generateGanttChartTextBased(publishBlocks[0].stackDeploys);
+        const filename = `${inputFileName}-app.txt`
+        // // Uncomment to rewrite comparison data
+        // await fs.promises.writeFile(`${filePath}/${filename}`, chartApp);
+        const chartExpected = await fs.promises.readFile(`${filePath}/${filename}`, 'utf8');
+        expect(chartApp).toEqual(chartExpected);
     })
 })

@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import { SSTLogAnalyzer, SynthBlock, PublishBlock } from './sstLogAnalyzer';
+import { extractPublishBlocks, extractResourceBlocks, extractSynthesizeBlocks } from './sstLogAnalyzer';
 import { generateGanttChartTextBased } from './ganttCharts';
 import {basename, extname} from 'path';
 
@@ -53,9 +53,9 @@ console.log({inputFilePath, inputFileName})
 
 // Read logs, parse analytics, save to file
 const logContent = await fs.promises.readFile(inputFilePath, 'utf8');
-const synthBlocks = SSTLogAnalyzer.extractSynthesizeBlocks(logContent);
-const publishBlocks = SSTLogAnalyzer.extractPublishBlocks(logContent);
-const resourcePublishes = SSTLogAnalyzer.extractResourceBlocks(logContent);
+const synthBlocks = extractSynthesizeBlocks(logContent);
+const publishBlocks = extractPublishBlocks(logContent);
+const resourcePublishes = extractResourceBlocks(logContent);
 const results = { synthBlocks, publishBlocks, resourcePublishes };
 console.log(publishBlocks)
 
