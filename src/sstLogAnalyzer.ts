@@ -187,13 +187,15 @@ export class SSTLogAnalyzer {
     static extractPublishBlocks(logContent: string): PublishBlock[] {
         const lines = logContent.split('\n');
         const publishBlocks: PublishBlock[] = [];
-        let currentPublish: PublishBlock | null = null;
+        let currentPublish: PublishBlock | undefined = undefined;
         let inProgressStacks = new Map<string, StackDeploys>();
         let inProgressResources = new Map<string, ResourceDeploy>();
 
+        let maxTimestamp = new Date(0);
         for (let line of lines) {
             const timestamp = this.extractTimestamp(line);
             if (!timestamp) continue;
+            maxTimestamp = timestamp > maxTimestamp ? timestamp : maxTimestamp;
 
             // Check for new deploy block
             const deployMatch = line.match(this.DEPLOY_STACKS_PATTERN);
@@ -240,13 +242,33 @@ export class SSTLogAnalyzer {
                         currentPublish.stackDeploys = Array.from(inProgressStacks.values());
                         publishBlocks.push(currentPublish);
 
-                        currentPublish = null;
+                        currentPublish = undefined;
                         inProgressStacks.clear();
                     }
                 } else {
                     console.log('Unhandled stack status:', status);
                 }
             }
+        }
+        if (currentPublish) {
+            console.error('Publish block did not complete:', currentPublish);
+            // Set all stack endTimes to maxTimestamp if not filled
+            currentPublish.endTime = maxTimestamp;
+            currentPublish.duration = currentPublish.endTime.getTime() - currentPublish.startTime.getTime();
+            inProgressStacks.forEach(s => {
+                if (s.endTime  <= currentPublish!.startTime) {
+                    s.endTime = maxTimestamp;
+                    s.duration = s.endTime.getTime() - s.startTime.getTime();
+                }
+                if (s.startTime <= currentPublish!.startTime) {
+                    s.startTime = currentPublish!.endTime;
+                    s.duration = s.endTime.getTime() - s.startTime.getTime();
+                }
+            });
+            currentPublish.stackDeploys = Array.from(inProgressStacks.values());
+            publishBlocks.push(currentPublish);
+            currentPublish = undefined;
+            inProgressStacks.clear();
         }
         return publishBlocks;
     }
